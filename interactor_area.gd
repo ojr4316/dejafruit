@@ -1,0 +1,1 @@
+class_name InteractorArea extends Area3D

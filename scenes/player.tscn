@@ -1,9 +1,13 @@
-[gd_scene load_steps=9 format=4 uid="uid://b8e1o8ppvslh6"]
+[gd_scene load_steps=11 format=4 uid="uid://bgq5cbwclwnkt"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://ckur84kiauw6f" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://c5txf22p2r1eb" path="res://interactor_area.gd" id="2_qhqgy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dqkch"]
+size = Vector3(0.6715088, 0.49290538, 0.888916)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g2els"]
 resource_name = "SK_Chr_Cook_Male_01"
@@ -551,6 +555,15 @@ shape = SubResource("CapsuleShape3D_g2els")
 
 [node name="Root" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="InteractorArea" type="Area3D" parent="Root"]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+script = ExtResource("2_qhqgy")
+metadata/_custom_type_script = "uid://c5txf22p2r1eb"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Root/InteractorArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.042013764, 1.2074366, -0.52998435)
+shape = SubResource("BoxShape3D_dqkch")
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Root"]
 bones/0/name = "Pelvis"
