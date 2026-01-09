@@ -601,7 +601,7 @@ func _process_single_fbx(fbx_path: String, target_material: StandardMaterial3D, 
 		_add_physics_components(new_mesh_instance)
 
 	# Scale all assets up
-	new_mesh_instance.scale = Vector3(50, 50, 50)
+	#new_mesh_instance.scale = Vector3(50, 50, 50)
 
 	var split_on_underscore := scene_name.split("_")
 	
