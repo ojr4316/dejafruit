@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://cn2kq1xlh0ffe"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_g10bg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g10bg"]
+resource_name = "lambert21"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mcdn2"]
+_surfaces = [{
+"aabb": AABB(-0.0008410263, 0, -0.0008410263, 0.0016820526, 0.08828928, 0.0016820526),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "lambert21",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("UnhcugPRtD1SeFw6UnhcugAAAABSeFw6UnhcugAAAABSeFy6UnhcugPRtD1SeFy6UnhcOgPRtD1SeFw6UnhcOgAAAABSeFy6UnhcOgAAAABSeFw6UnhcOgPRtD1SeFy6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2iqqe"]
+resource_name = "SI_Env_Wall_CornerBlock_large"
+_surfaces = [{
+"aabb": AABB(-0.0008410263, 0, -0.0008410263, 0.0016820526, 0.08828928, 0.0016820526),
+"attribute_data": PackedByteArray("eXBRPmjABj95cFE+aMAGP3twUT5owAY/e3BRPmjABj8njoY+aMAGPyeOhj5owAY/KY6GPmjABj8pjoY+aMAGP3lwUT5owAY/eXBRPmjABj97cFE+aMAGP3twUT5owAY/lbQqPmrABj+VtCo+aMAGP5e0Kj5owAY/l7QqPmrABj9hkGo+aMAGP2GQaj5owAY/ZZBqPmjABj9lkGo+aMAGP2mQaj5owAY/aZBqPmjABj9lkGo+aMAGP2WQaj5owAY/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_g10bg"),
+"name": "lambert21",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("UnhcugPRtD1SeFw6UnhcugAAAABSeFw6UnhcugAAAABSeFy6UnhcugPRtD1SeFy6UnhcOgPRtD1SeFw6UnhcugPRtD1SeFw6UnhcugPRtD1SeFy6UnhcOgPRtD1SeFy6UnhcOgAAAABSeFw6UnhcOgPRtD1SeFw6UnhcOgPRtD1SeFy6UnhcOgAAAABSeFy6UnhcugAAAABSeFw6UnhcOgAAAABSeFw6UnhcOgAAAABSeFy6UnhcugAAAABSeFy6UnhcOgPRtD1SeFw6UnhcOgAAAABSeFw6UnhcugAAAABSeFw6UnhcugPRtD1SeFw6UnhcugPRtD1SeFy6UnhcugAAAABSeFy6UnhcOgAAAABSeFy6UnhcOgPRtD1SeFy6AAD/f////z8AAP9/////PwAA/3////8/AAD/f////z//f///////v/9///////+//3///////7//f///////v////3////+/////f////7////9/////v////3////+//38AAP//////fwAA//////9/AAD//////38AAP//////f/9/////P/9//3////8//3//f////z//f/9/////PwAA//////+/AAD//////78AAP//////vwAA//////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mcdn2")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_iwf6v"]
+points = PackedVector3Array(-0.0008410263, 0.08828928, 0.0008410263, -0.0008410263, 0, 0.0008410263, -0.0008410263, 0, -0.0008410263, -0.0008410263, 0.08828928, -0.0008410263, 0.0008410263, 0.08828928, 0.0008410263, -0.0008410263, 0.08828928, 0.0008410263, -0.0008410263, 0.08828928, -0.0008410263, 0.0008410263, 0.08828928, -0.0008410263, 0.0008410263, 0, 0.0008410263, 0.0008410263, 0.08828928, 0.0008410263, 0.0008410263, 0.08828928, -0.0008410263, 0.0008410263, 0, -0.0008410263, -0.0008410263, 0, 0.0008410263, 0.0008410263, 0, 0.0008410263, 0.0008410263, 0, -0.0008410263, -0.0008410263, 0, -0.0008410263, 0.0008410263, 0.08828928, 0.0008410263, 0.0008410263, 0, 0.0008410263, -0.0008410263, 0, 0.0008410263, -0.0008410263, 0.08828928, 0.0008410263, -0.0008410263, 0.08828928, -0.0008410263, -0.0008410263, 0, -0.0008410263, 0.0008410263, 0, -0.0008410263, 0.0008410263, 0.08828928, -0.0008410263)
+
+[node name="SI_Env_Wall_CornerBlock_large" type="Node3D"]
+
+[node name="SI_Env_Wall_CornerBlock_large" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+material_override = ExtResource("1_g10bg")
+mesh = SubResource("ArrayMesh_2iqqe")
+
+[node name="SI_Env_Wall_CornerBlock_large_col" type="StaticBody3D" parent="SI_Env_Wall_CornerBlock_large"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Env_Wall_CornerBlock_large/SI_Env_Wall_CornerBlock_large_col"]
+shape = SubResource("ConvexPolygonShape3D_iwf6v")

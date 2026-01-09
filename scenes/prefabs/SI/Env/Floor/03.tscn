@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://bp3mrvprfhgqb"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_y0vet"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0vet"]
+resource_name = "lambert7"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qjlnc"]
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 0.05, 1e-05, 0.05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"name": "lambert7",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAADNzEw9AAAAAAAAAAAAAAAAzcxMPQAAAAAAAAAAzcxMPQAAAADNzEw9")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pd0kx"]
+resource_name = "SI_Env_Floor_03"
+_surfaces = [{
+"aabb": AABB(0, 0, 0, 0.05, 1e-05, 0.05),
+"attribute_data": PackedByteArray("PpZzPvs5BT++NW4++zkFP741bj4bkgY/PpZzPhuSBj8="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAgADAAAA"),
+"material": SubResource("StandardMaterial3D_y0vet"),
+"name": "lambert7",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAADNzEw9AAAAAAAAAAAAAAAAzcxMPQAAAAAAAAAAzcxMPQAAAADNzEw9/3////9//z//f////3//P/9/////f/8//3////9//z8=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qjlnc")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3vjg0"]
+points = PackedVector3Array(0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0.05, 0, 0.05)
+
+[node name="SI_Env_Floor_03" type="Node3D"]
+
+[node name="SI_Env_Floor_03" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 4.7683715e-09)
+material_override = ExtResource("1_y0vet")
+mesh = SubResource("ArrayMesh_pd0kx")
+
+[node name="SI_Env_Floor_03_col" type="StaticBody3D" parent="SI_Env_Floor_03"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Env_Floor_03/SI_Env_Floor_03_col"]
+shape = SubResource("ConvexPolygonShape3D_3vjg0")

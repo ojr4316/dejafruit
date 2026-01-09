@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://dt424ggnw0pjv"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_odpmf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odpmf"]
+resource_name = "lambert224"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j01ko"]
+_surfaces = [{
+"aabb": AABB(-0.010721445, -4.9984594e-10, -0.0003767088, 0.02144289, 0.000753417, 0.0007534176),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "lambert224",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AKkvPO2ARToAgcU5AKkvPIhlCbAAgcU5AKkvvIhlCbAAgcU5AKkvvO2ARToAgcU5AKkvPO2ARToAgcW5AKkvvIhlCbAAgcW5AKkvPIhlCbAAgcW5AKkvvO2ARToAgcW5")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kogtc"]
+resource_name = "SI_Prop_Curtain_01"
+_surfaces = [{
+"aabb": AABB(-0.010721445, -4.9984594e-10, -0.0003767088, 0.02144289, 0.000753417, 0.0007534176),
+"attribute_data": PackedByteArray("05OXPgbBBj/Tk5c+BsEGP9WTlz4GwQY/1ZOXPgbBBj/Nqak+BsEGP82pqT4GwQY/z6mpPgbBBj/Pqak+BsEGP9OTlz4GwQY/05OXPgbBBj/Vk5c+BsEGP9WTlz4GwQY/ZN5yPgfBBj9k3nI+BsEGP2jecj4GwQY/aN5yPgfBBj/W6oo+BsEGP9bqij4GwQY/1+qKPgbBBj/X6oo+BsEGP9nqij4GwQY/2eqKPgbBBj/Y6oo+BsEGP9jqij4GwQY/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_odpmf"),
+"name": "lambert224",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AKkvPO2ARToAgcU5AKkvPIhlCbAAgcU5AKkvvIhlCbAAgcU5AKkvvO2ARToAgcU5AKkvPO2ARToAgcW5AKkvPO2ARToAgcU5AKkvvO2ARToAgcU5AKkvvO2ARToAgcW5AKkvPIhlCbAAgcW5AKkvPO2ARToAgcW5AKkvvO2ARToAgcW5AKkvvIhlCbAAgcW5AKkvPIhlCbAAgcU5AKkvPIhlCbAAgcW5AKkvvIhlCbAAgcW5AKkvvIhlCbAAgcU5AKkvPO2ARToAgcW5AKkvPIhlCbAAgcW5AKkvPIhlCbAAgcU5AKkvPO2ARToAgcU5AKkvvO2ARToAgcU5AKkvvIhlCbAAgcU5AKkvvIhlCbAAgcW5AKkvvO2ARToAgcW5/3//f////z//f/9/////P/9//3////8//3//f////z//f///////v/9///////+//3///////7//f///////v/////////+//////////7//////////v/////////+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9/////v////3////+/////f////7////9/////vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_j01ko")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kivyc"]
+points = PackedVector3Array(0.010721445, 0.0007534165, 0.0003767088, 0.010721445, -4.9984594e-10, 0.0003767088, -0.010721445, -4.9984594e-10, 0.0003767088, -0.010721445, 0.0007534165, 0.0003767088, 0.010721445, 0.0007534165, -0.0003767088, 0.010721445, 0.0007534165, 0.0003767088, -0.010721445, 0.0007534165, 0.0003767088, -0.010721445, 0.0007534165, -0.0003767088, 0.010721445, -4.9984594e-10, -0.0003767088, 0.010721445, 0.0007534165, -0.0003767088, -0.010721445, 0.0007534165, -0.0003767088, -0.010721445, -4.9984594e-10, -0.0003767088, 0.010721445, -4.9984594e-10, 0.0003767088, 0.010721445, -4.9984594e-10, -0.0003767088, -0.010721445, -4.9984594e-10, -0.0003767088, -0.010721445, -4.9984594e-10, 0.0003767088, 0.010721445, 0.0007534165, -0.0003767088, 0.010721445, -4.9984594e-10, -0.0003767088, 0.010721445, -4.9984594e-10, 0.0003767088, 0.010721445, 0.0007534165, 0.0003767088, -0.010721445, 0.0007534165, 0.0003767088, -0.010721445, -4.9984594e-10, 0.0003767088, -0.010721445, -4.9984594e-10, -0.0003767088, -0.010721445, 0.0007534165, -0.0003767088)
+
+[node name="SI_Prop_Curtain_01" type="Node3D"]
+
+[node name="SI_Prop_Curtain_01" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 3.5527136e-17, 0.035845026, 0)
+material_override = ExtResource("1_odpmf")
+mesh = SubResource("ArrayMesh_kogtc")
+
+[node name="SI_Prop_Curtain_01_col" type="StaticBody3D" parent="SI_Prop_Curtain_01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Prop_Curtain_01/SI_Prop_Curtain_01_col"]
+shape = SubResource("ConvexPolygonShape3D_kivyc")

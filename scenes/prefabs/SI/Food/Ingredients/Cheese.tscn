@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://df8g5jtibsymr"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_gybp6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gybp6"]
+resource_name = "lambert90"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2ymi3"]
+_surfaces = [{
+"aabb": AABB(-0.0012741089, 0, -0.0012741119, 0.0025482178, 0.0002240467, 0.0025482238),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "lambert90",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AACnOhTuajkaAKc6AACnOgAAAAAaAKc6AACnugAAAAAaAKc6AACnuhTuajkaAKc6AACnOhTuajkaAKe6AACnugAAAAAaAKe6AACnOgAAAAAaAKe6AACnuhTuajkaAKe6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_x6h2e"]
+resource_name = "SI_Food_Ingredients_Cheese"
+_surfaces = [{
+"aabb": AABB(-0.0012741089, 0, -0.0012741119, 0.0025482178, 0.0002240467, 0.0025482238),
+"attribute_data": PackedByteArray("YumWPpmqRz9i6ZY+mapHP2Tplj6Zqkc/ZOmWPpmqRz9c/6g+mapHP1z/qD6Zqkc/Xv+oPpmqRz9e/6g+mapHP2Lplj6Zqkc/YumWPpmqRz9k6ZY+mapHP2Tplj6Zqkc/hYlxPpqqRz+FiXE+mapHP4mJcT6Zqkc/iYlxPpqqRz9nQIo+mapHP2dAij6Zqkc/Z0CKPpmqRz9nQIo+mapHP2lAij6Zqkc/aUCKPpmqRz9pQIo+mapHP2lAij6Zqkc/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gybp6"),
+"name": "lambert90",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AACnOhTuajkaAKc6AACnOgAAAAAaAKc6AACnugAAAAAaAKc6AACnuhTuajkaAKc6AACnOhTuajkaAKe6AACnOhTuajkaAKc6AACnuhTuajkaAKc6AACnuhTuajkaAKe6AACnOgAAAAAaAKe6AACnOhTuajkaAKe6AACnuhTuajkaAKe6AACnugAAAAAaAKe6AACnOgAAAAAaAKc6AACnOgAAAAAaAKe6AACnugAAAAAaAKe6AACnugAAAAAaAKc6AACnOhTuajkaAKe6AACnOgAAAAAaAKe6AACnOgAAAAAaAKc6AACnOhTuajkaAKc6AACnuhTuajkaAKc6AACnugAAAAAaAKc6AACnugAAAAAaAKe6AACnuhTuajkaAKe6/3//f////z//f/9/////P/9//3////8//3//f////z//f///////v/9///////+//3///////7//f///////v/////////+//////////7//////////v/////////+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9/////v////3////+/////f////7////9/////vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_2ymi3")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pxqcb"]
+points = PackedVector3Array(0.0012741089, 0.0002240467, 0.0012741119, 0.0012741089, 0, 0.0012741119, -0.0012741089, 0, 0.0012741119, -0.0012741089, 0.0002240467, 0.0012741119, 0.0012741089, 0.0002240467, -0.0012741119, 0.0012741089, 0.0002240467, 0.0012741119, -0.0012741089, 0.0002240467, 0.0012741119, -0.0012741089, 0.0002240467, -0.0012741119, 0.0012741089, 0, -0.0012741119, 0.0012741089, 0.0002240467, -0.0012741119, -0.0012741089, 0.0002240467, -0.0012741119, -0.0012741089, 0, -0.0012741119, 0.0012741089, 0, 0.0012741119, 0.0012741089, 0, -0.0012741119, -0.0012741089, 0, -0.0012741119, -0.0012741089, 0, 0.0012741119, 0.0012741089, 0.0002240467, -0.0012741119, 0.0012741089, 0, -0.0012741119, 0.0012741089, 0, 0.0012741119, 0.0012741089, 0.0002240467, 0.0012741119, -0.0012741089, 0.0002240467, 0.0012741119, -0.0012741089, 0, 0.0012741119, -0.0012741089, 0, -0.0012741119, -0.0012741089, 0.0002240467, -0.0012741119)
+
+[node name="SI_Food_Ingredients_Cheese" type="Node3D"]
+
+[node name="SI_Food_Ingredients_Cheese" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 8.881784e-18, 0, 0)
+material_override = ExtResource("1_gybp6")
+mesh = SubResource("ArrayMesh_x6h2e")
+
+[node name="SI_Food_Ingredients_Cheese_col" type="StaticBody3D" parent="SI_Food_Ingredients_Cheese"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Food_Ingredients_Cheese/SI_Food_Ingredients_Cheese_col"]
+shape = SubResource("ConvexPolygonShape3D_pxqcb")

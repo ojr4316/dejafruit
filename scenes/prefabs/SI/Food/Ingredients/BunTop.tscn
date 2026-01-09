@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://bfknulu3sfwbx"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_smx4a"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smx4a"]
+resource_name = "lambert89"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_arw78"]
+_surfaces = [{
+"aabb": AABB(-0.0017839145, 0, -0.0017839104, 0.003567829, 0.0013692343, 0.0035678209),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAQAEAAMABQACAAMAAgAFAAAABgADAAQAAwAGAAUABwAEAAEAAQAAAAcABAAHAAYACAAAAAUACQAGAAcACgAHAAAABwAKAAkAAAAIAAoABgAJAAsACwAFAAYACwAJAAoABQALAAgACgAIAAsA"),
+"name": "lambert89",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("PdLpOuHPRToa0uk6PdLpOgAAAAAa0uk6PdLpugAAAAAa0uk6PdLpugAAAAAa0um6PdLpOgAAAAAa0um6PdLpuuHPRToa0uk6PdLpuuHPRToa0um6PdLpOuHPRToa0um67BF4OuF3szoFEng67BF4uuF3szoFEni67BF4OuF3szoFEni67BF4uuF3szoFEng6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_wfkb5"]
+resource_name = "SI_Food_Ingredients_BunTop"
+_surfaces = [{
+"aabb": AABB(-0.0017839145, 0, -0.0017839104, 0.003567829, 0.0013692343, 0.0035678209),
+"attribute_data": PackedByteArray("9IPFPkBlGT/0g8U+QGUZP/aDxT5AZRk/9oPFPkBlGT9I6eg+QGUZP0jp6D5AZRk/SunoPkBlGT9K6eg+QGUZP/SDxT5AZRk/9IPFPkBlGT/2g8U+QGUZP/aDxT5AZRk/U1+nPkBlGT9TX6c+QGUZP1Vfpz5AZRk/VV+nPkBlGT/32rg+QGUZP/fauD5AZRk/+Nq4PkBlGT/42rg+QGUZP/rauD5AZRk/+tq4PkBlGT/52rg+QGUZP/nauD5AZRk/7pnXPkBlGT/umdc+QGUZP/CZ1z5AZRk/8JnXPkBlGT+i88o+QGUZP6Lzyj5AZRk/ovPKPkBlGT+i88o+QGUZP/CZ1z5AZRk/8JnXPkBlGT/umdc+QGUZP+6Z1z5AZRk/pPPKPkBlGT+k88o+QGUZP6Tzyj5AZRk/pPPKPkBlGT8="),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQA"),
+"material": SubResource("StandardMaterial3D_smx4a"),
+"name": "lambert89",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("PdLpOuHPRToa0uk6PdLpOgAAAAAa0uk6PdLpugAAAAAa0uk6PdLpuuHPRToa0uk67BF4OuF3szoFEni67BF4OuF3szoFEng67BF4uuF3szoFEng67BF4uuF3szoFEni6PdLpOgAAAAAa0um6PdLpOuHPRToa0um6PdLpuuHPRToa0um6PdLpugAAAAAa0um6PdLpOgAAAAAa0uk6PdLpOgAAAAAa0um6PdLpugAAAAAa0um6PdLpugAAAAAa0uk6PdLpOuHPRToa0um6PdLpOgAAAAAa0um6PdLpOgAAAAAa0uk6PdLpOuHPRToa0uk6PdLpuuHPRToa0uk6PdLpugAAAAAa0uk6PdLpugAAAAAa0um6PdLpuuHPRToa0um67BF4OuF3szoFEng6PdLpOuHPRToa0uk6PdLpuuHPRToa0uk67BF4uuF3szoFEng67BF4OuF3szoFEni6PdLpOuHPRToa0um6PdLpOuHPRToa0uk67BF4OuF3szoFEng67BF4uuF3szoFEni6PdLpuuHPRToa0um6PdLpOuHPRToa0um67BF4OuF3szoFEni67BF4uuF3szoFEng6PdLpuuHPRToa0uk6PdLpuuHPRToa0um67BF4uuF3szoFEni6/3//f////z//f/9/////P/9//3////8//3//f////z//f///////v/9///////+//3///////7//f///////v/////////+//////////7//////////v/////////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9/////v////3////+/////f////7////9/////vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+//3/Syf///z//f9LJ////P/9/0sn///8//3/Syf///z8rttLJ////vyu20sn///+/K7bSyf///78rttLJ////vyu2//////+/K7b//////78rtv//////vyu2//////+/00nSyf///7/TSdLJ////v9NJ0sn///+/00nSyf///78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_arw78")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6go52"]
+points = PackedVector3Array(0.0017839145, 0.000754593, 0.0017839104, 0.0017839145, 0, 0.0017839104, -0.0017839145, 0, 0.0017839104, -0.0017839145, 0.000754593, 0.0017839104, 0.000946312, 0.0013692343, -0.00094631343, 0.000946312, 0.0013692343, 0.00094631343, -0.000946312, 0.0013692343, 0.00094631343, -0.000946312, 0.0013692343, -0.00094631343, 0.0017839145, 0, -0.0017839104, 0.0017839145, 0.000754593, -0.0017839104, -0.0017839145, 0.000754593, -0.0017839104, -0.0017839145, 0, -0.0017839104, 0.0017839145, 0, 0.0017839104, 0.0017839145, 0, -0.0017839104, -0.0017839145, 0, -0.0017839104, -0.0017839145, 0, 0.0017839104, 0.0017839145, 0.000754593, -0.0017839104, 0.0017839145, 0, -0.0017839104, 0.0017839145, 0, 0.0017839104, 0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0, 0.0017839104, -0.0017839145, 0, -0.0017839104, -0.0017839145, 0.000754593, -0.0017839104, 0.000946312, 0.0013692343, 0.00094631343, 0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0.000754593, 0.0017839104, -0.000946312, 0.0013692343, 0.00094631343, 0.000946312, 0.0013692343, -0.00094631343, 0.0017839145, 0.000754593, -0.0017839104, 0.0017839145, 0.000754593, 0.0017839104, 0.000946312, 0.0013692343, 0.00094631343, -0.000946312, 0.0013692343, -0.00094631343, -0.0017839145, 0.000754593, -0.0017839104, 0.0017839145, 0.000754593, -0.0017839104, 0.000946312, 0.0013692343, -0.00094631343, -0.000946312, 0.0013692343, 0.00094631343, -0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0.000754593, -0.0017839104, -0.000946312, 0.0013692343, -0.00094631343)
+
+[node name="SI_Food_Ingredients_BunTop" type="Node3D"]
+
+[node name="SI_Food_Ingredients_BunTop" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+material_override = ExtResource("1_smx4a")
+mesh = SubResource("ArrayMesh_wfkb5")
+
+[node name="SI_Food_Ingredients_BunTop_col" type="StaticBody3D" parent="SI_Food_Ingredients_BunTop"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Food_Ingredients_BunTop/SI_Food_Ingredients_BunTop_col"]
+shape = SubResource("ConvexPolygonShape3D_6go52")

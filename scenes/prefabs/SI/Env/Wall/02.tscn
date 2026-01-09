@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://4mh4r7uh5i0x"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_y2grd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2grd"]
+resource_name = "lambert17"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5ccdm"]
+_surfaces = [{
+"aabb": AABB(0, -0.0027066327, 0, 0.050000038, 0.046851274, 0.0005487442),
+"format": 34359742465,
+"index_count": 42,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAAAQAFAAMABgAAAAQABwADAAUABQAIAAcABAAJAAYACgAGAAkACQALAAoADAAHAA0ADQAOAAwADwAMAA4ADgAQAA8A"),
+"name": "lambert17",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 17,
+"vertex_data": PackedByteArray("AAAAALgMBzsAAAAAAAAAALx+gDwAAAAA18xMPbt+gDwAAAAA18xMPfi9vDwAAAAA18xMPbgMBzsAAAAAAAAAAPi9vDwAAAAAAAAAALgMBzua2Q8618xMPTdgLD0AAAAAAAAAADdgLD0AAAAA18xMPbgMBzua2Q86CtcjM8NhMbua2Q8618xMPcNhMbua2Q8618xMPTdgLD2a2Q86CtcjMzdgLD0AAAAACtcjMzdgLD2a2Q8618xMPQPRND2a2Q86AAAAAAPRND2a2Q86")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cnvc7"]
+resource_name = "SI_Env_Wall_02"
+_surfaces = [{
+"aabb": AABB(0, -0.0027066327, 0, 0.050000038, 0.046851274, 0.0005487442),
+"attribute_data": PackedByteArray("E/fFPsKCVD8U98U+woJUPxP3xT7CglQ/E/fFPsKCVD/2CXM+Hp5UP/YJcz4enlQ/9glzPh6eVD/2CXM+Hp5UP6oL6D22TlQ/qgvoPbZOVD+qC+g9tk5UP6oL6D22TlQ/9glzPh6eVD/2CXM+Hp5UP/YJcz4enlQ/9glzPh6eVD+qC+g9BWhUP6oL6D0FaFQ/qgvoPQVoVD+qC+g9BWhUPxP3xT7CglQ/E/fFPsKCVD8U98U+woJUPxP3xT7CglQ/gJ7IPmjnBT+Ansg+aucFP4CeyD5q5wU/gJ7IPmjnBT8="),
+"format": 34359742487,
+"index_count": 42,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgA"),
+"material": SubResource("StandardMaterial3D_y2grd"),
+"name": "lambert17",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 28,
+"vertex_data": PackedByteArray("AAAAALgMBzsAAAAAAAAAALx+gDwAAAAA18xMPbt+gDwAAAAA18xMPbgMBzsAAAAA18xMPQPRND2a2Q8618xMPTdgLD2a2Q86CtcjMzdgLD2a2Q86AAAAAAPRND2a2Q86CtcjMzdgLD0AAAAACtcjMzdgLD2a2Q8618xMPTdgLD2a2Q8618xMPTdgLD0AAAAA18xMPbgMBzua2Q8618xMPcNhMbua2Q86CtcjM8NhMbua2Q86AAAAALgMBzua2Q8618xMPbgMBzsAAAAA18xMPbgMBzua2Q86AAAAALgMBzua2Q86AAAAALgMBzsAAAAA18xMPTdgLD0AAAAA18xMPfi9vDwAAAAAAAAAAPi9vDwAAAAAAAAAADdgLD0AAAAA18xMPfi9vDwAAAAA18xMPbt+gDwAAAAAAAAAALx+gDwAAAAAAAAAAPi9vDwAAAAA/3//f////z//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8//3//f////z//f/9/////P/9/AAD///+//38AAP///7//fwAA////v/9/AAD///+//3//f////z//f/9/////P/9//3////8//3//f////z//f///////v/9///////+//3///////7//f///////v/9//3////8//3//f////z//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8//3//f////z8=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_5ccdm")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eujbc"]
+points = PackedVector3Array(0, 0.0020606946, 0, 0, 0.015685432, 0, 0.050000038, 0.01568543, 0, 0.050000038, 0.0020606946, 0, 0.050000038, 0.04414464, 0.0005487442, 0.050000038, 0.042083945, 0.0005487442, 3.8146972e-08, 0.042083945, 0.0005487442, 0, 0.04414464, 0.0005487442, 3.8146972e-08, 0.042083945, 0, 3.8146972e-08, 0.042083945, 0.0005487442, 0.050000038, 0.042083945, 0.0005487442, 0.050000038, 0.042083945, 0, 0.050000038, 0.0020606946, 0.0005487442, 0.050000038, -0.0027066327, 0.0005487442, 3.8146972e-08, -0.0027066327, 0.0005487442, 0, 0.0020606946, 0.0005487442, 0.050000038, 0.0020606946, 0, 0.050000038, 0.0020606946, 0.0005487442, 0, 0.0020606946, 0.0005487442, 0, 0.0020606946, 0, 0.050000038, 0.042083945, 0, 0.050000038, 0.023039803, 0, 0, 0.023039803, 0, 0, 0.042083945, 0, 0.050000038, 0.023039803, 0, 0.050000038, 0.01568543, 0, 0, 0.015685432, 0, 0, 0.023039803, 0)
+
+[node name="SI_Env_Wall_02" type="Node3D"]
+
+[node name="SI_Env_Wall_02" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+material_override = ExtResource("1_y2grd")
+mesh = SubResource("ArrayMesh_cnvc7")
+
+[node name="SI_Env_Wall_02_col" type="StaticBody3D" parent="SI_Env_Wall_02"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Env_Wall_02/SI_Env_Wall_02_col"]
+shape = SubResource("ConvexPolygonShape3D_eujbc")

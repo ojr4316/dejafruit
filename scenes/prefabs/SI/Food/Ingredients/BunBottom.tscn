@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://ne3ut4232lfn"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_y5xma"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y5xma"]
+resource_name = "lambert88"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pd6nj"]
+_surfaces = [{
+"aabb": AABB(-0.0017839145, -2.6808518e-18, -0.0017839104, 0.003567829, 0.000754593, 0.0035678209),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAAAQAAAAQABAAAAAMABQACAAEAAwACAAUABAAGAAEAAQAGAAUAAwAHAAQABgAEAAcABQAHAAMABwAFAAYA"),
+"name": "lambert88",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("PdLpOuHPRToa0uk6PdLpOtzPRaIa0uk6PdLputzPRaIa0uk6PdLpuuHPRToa0uk6PdLpOuHPRToa0um6PdLputzPRaIa0um6PdLpOtzPRaIa0um6PdLpuuHPRToa0um6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fs5bc"]
+resource_name = "SI_Food_Ingredients_BunBottom"
+_surfaces = [{
+"aabb": AABB(-0.0017839145, -2.6808518e-18, -0.0017839104, 0.003567829, 0.000754593, 0.0035678209),
+"attribute_data": PackedByteArray("9IPFPkBlGT/0g8U+QGUZP/aDxT5AZRk/9oPFPkBlGT/umdc+QGUZP+6Z1z5AZRk/8JnXPkBlGT/wmdc+QGUZP/SDxT5AZRk/9IPFPkBlGT/2g8U+QGUZP/aDxT5AZRk/U1+nPkBlGT9TX6c+QGUZP1Vfpz5AZRk/VV+nPkBlGT/32rg+QGUZP/fauD5AZRk/+Nq4PkBlGT/42rg+QGUZP/rauD5AZRk/+tq4PkBlGT/52rg+QGUZP/nauD5AZRk/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_y5xma"),
+"name": "lambert88",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("PdLpOuHPRToa0uk6PdLpOtzPRaIa0uk6PdLputzPRaIa0uk6PdLpuuHPRToa0uk6PdLpOuHPRToa0um6PdLpOuHPRToa0uk6PdLpuuHPRToa0uk6PdLpuuHPRToa0um6PdLpOtzPRaIa0um6PdLpOuHPRToa0um6PdLpuuHPRToa0um6PdLputzPRaIa0um6PdLpOtzPRaIa0uk6PdLpOtzPRaIa0um6PdLputzPRaIa0um6PdLputzPRaIa0uk6PdLpOuHPRToa0um6PdLpOtzPRaIa0um6PdLpOtzPRaIa0uk6PdLpOuHPRToa0uk6PdLpuuHPRToa0uk6PdLputzPRaIa0uk6PdLputzPRaIa0um6PdLpuuHPRToa0um6/3//f////z//f/9/////P/9//3////8//3//f////z//f///////v/9///////+//3///////7//f///////v/////////+//////////7//////////v/////////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7////9/////v////3////+/////f////7////9/////vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pd6nj")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8pued"]
+points = PackedVector3Array(0.0017839145, 0.000754593, 0.0017839104, 0.0017839145, -2.6808518e-18, 0.0017839104, -0.0017839145, -2.6808518e-18, 0.0017839104, -0.0017839145, 0.000754593, 0.0017839104, 0.0017839145, 0.000754593, -0.0017839104, 0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0.000754593, -0.0017839104, 0.0017839145, -2.6808518e-18, -0.0017839104, 0.0017839145, 0.000754593, -0.0017839104, -0.0017839145, 0.000754593, -0.0017839104, -0.0017839145, -2.6808518e-18, -0.0017839104, 0.0017839145, -2.6808518e-18, 0.0017839104, 0.0017839145, -2.6808518e-18, -0.0017839104, -0.0017839145, -2.6808518e-18, -0.0017839104, -0.0017839145, -2.6808518e-18, 0.0017839104, 0.0017839145, 0.000754593, -0.0017839104, 0.0017839145, -2.6808518e-18, -0.0017839104, 0.0017839145, -2.6808518e-18, 0.0017839104, 0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, 0.000754593, 0.0017839104, -0.0017839145, -2.6808518e-18, 0.0017839104, -0.0017839145, -2.6808518e-18, -0.0017839104, -0.0017839145, 0.000754593, -0.0017839104)
+
+[node name="SI_Food_Ingredients_BunBottom" type="Node3D"]
+
+[node name="SI_Food_Ingredients_BunBottom" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+material_override = ExtResource("1_y5xma")
+mesh = SubResource("ArrayMesh_fs5bc")
+
+[node name="SI_Food_Ingredients_BunBottom_col" type="StaticBody3D" parent="SI_Food_Ingredients_BunBottom"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Food_Ingredients_BunBottom/SI_Food_Ingredients_BunBottom_col"]
+shape = SubResource("ConvexPolygonShape3D_8pued")

@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=4 uid="uid://csqjk7y7wd041"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_uhhep"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uhhep"]
+resource_name = "lambert402"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rmamg"]
+_surfaces = [{
+"aabb": AABB(-0.006269417, 0, 0, 0.012538824, 0.019571949, 0.001149458),
+"format": 34359742465,
+"index_count": 54,
+"index_data": PackedByteArray("CQAHAAoACgAHAAUABQAHAAkACgALAAkAAQAJAAsACQABAAUACwAKAAgABQAIAAoACwACAAEACAACAAsABQABAAAAAAABAAIAAAAGAAUAAgADAAAABQAGAAQABAADAAIABAAIAAUAAgAIAAQA"),
+"lods": [0.008648115, PackedByteArray("AAABAAIAAgADAAAABAADAAIABQABAAAAAAAGAAUABQAGAAQABwABAAUABwACAAEABAAIAAUABQAIAAcAAgAIAAQACAACAAcA")],
+"name": "lambert402",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("mm/NO1pVoDwAAAAAmm/NO1pVoDxpqZY6rm/Nu1pVoDxpqZY6rm/Nu1pVoDwAAAAArm/NuwAAAAAAAAAAmm/NOwAAAABpqZY6mm/NOwAAAAAAAAAAhQmyOwgNODppqZY6rm/NuwAAAABpqZY6hQmyO/KUmjxpqZY6mgmyuwgNODppqZY6mgmyu/KUmjxpqZY6")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cy52x"]
+resource_name = "SI_Prop_Sign_BurgerAd_01"
+_surfaces = [{
+"aabb": AABB(-0.006269417, 0, 0, 0.012538824, 0.019571949, 0.001149458),
+"attribute_data": PackedByteArray("jGRuPmLMcD+MZG4+YsxwP5Bkbj5izHA/kGRuPmLMcD9W7w0+ZMxwP1bvDT5jzHA/Wu8NPmPMcD9a7w0+ZMxwP57mMD5izHA/nuYwPmPMcD+g5jA+Y8xwP6DmMD5izHA/pOYwPmLMcD+k5jA+Y8xwP6LmMD5jzHA/ouYwPmLMcD+YOEo+Y8xwP5w4Sj5jzHA/mDhKPmPMcD+cOEo+YsxwP5g4Sj5izHA/d7oyPxR4Wz93ujI/3V1/P5X3GT/dXX8/lfcZPxR4Wz+cOEo+Y8xwP5g4Sj5izHA/mDhKPmPMcD+YOEo+Y8xwP5w4Sj5izHA/mDhKPmLMcD+YOEo+YsxwP5w4Sj5izHA/nDhKPmPMcD+cOEo+Y8xwP5w4Sj5izHA/"),
+"format": 34359742487,
+"index_count": 54,
+"index_data": PackedByteArray("FQAWABcAFwAYABUAAAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAGQASABAAEAARABkAGgAUABsAGwAcABoAHQATAB4AHgAfAB0AIAAhACIAIgAjACAA"),
+"lods": [0.008648115, PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEQATABIAEgAUABAAEgATABQA")],
+"material": SubResource("StandardMaterial3D_uhhep"),
+"name": "lambert402",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("mm/NO1pVoDwAAAAAmm/NO1pVoDxpqZY6rm/Nu1pVoDxpqZY6rm/Nu1pVoDwAAAAAmm/NOwAAAABpqZY6mm/NOwAAAAAAAAAArm/NuwAAAAAAAAAArm/NuwAAAABpqZY6mm/NO1pVoDwAAAAAmm/NOwAAAAAAAAAAmm/NOwAAAABpqZY6mm/NO1pVoDxpqZY6rm/Nu1pVoDxpqZY6rm/NuwAAAABpqZY6rm/NuwAAAAAAAAAArm/Nu1pVoDwAAAAAmm/NOwAAAABpqZY6rm/NuwAAAABpqZY6hQmyOwgNODppqZY6rm/Nu1pVoDxpqZY6mm/NO1pVoDxpqZY6hQmyO/KUmjxpqZY6hQmyOwgNODppqZY6mgmyuwgNODppqZY6mgmyu/KUmjxpqZY6mgmyuwgNODppqZY6hQmyO/KUmjxpqZY6mm/NOwAAAABpqZY6hQmyOwgNODppqZY6mgmyu/KUmjxpqZY6mm/NO1pVoDxpqZY6hQmyO/KUmjxpqZY6mgmyu/KUmjxpqZY6mgmyuwgNODppqZY6rm/NuwAAAABpqZY6rm/Nu1pVoDxpqZY6/3///////7//f///////v/9///////+//3///////7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7//fwAAAAD/v////3//f/8/////f/9//z////9//3//P////3//f/8/AAD/f/9//78AAP9//3//vwAA/3//f/+/AAD/f/9//7//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8//3//f////7//f/9/////v/9//3////+//3//f////7//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8//3//f////z//f/9/////P/9//3////8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rmamg")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hb1mg"]
+points = PackedVector3Array(0.0062694075, 0.019571949, 0, 0.0062694075, 0.019571949, 0.001149458, -0.006269417, 0.019571949, 0.001149458, -0.006269417, 0.019571949, 0, 0.0062694075, 0, 0.001149458, 0.0062694075, 0, 0, -0.006269417, 0, 0, -0.006269417, 0, 0.001149458, 0.0062694075, 0.019571949, 0, 0.0062694075, 0, 0, 0.0062694075, 0, 0.001149458, 0.0062694075, 0.019571949, 0.001149458, -0.006269417, 0.019571949, 0.001149458, -0.006269417, 0, 0.001149458, -0.006269417, 0, 0, -0.006269417, 0.019571949, 0, 0.0062694075, 0, 0.001149458, -0.006269417, 0, 0.001149458, 0.0054332637, 0.0007020985, 0.001149458, -0.006269417, 0.019571949, 0.001149458, 0.0062694075, 0.019571949, 0.001149458, 0.0054332637, 0.01886985, 0.001149458, 0.0054332637, 0.0007020985, 0.001149458, -0.0054332735, 0.0007020985, 0.001149458, -0.0054332735, 0.01886985, 0.001149458, -0.0054332735, 0.0007020985, 0.001149458, 0.0054332637, 0.01886985, 0.001149458, 0.0062694075, 0, 0.001149458, 0.0054332637, 0.0007020985, 0.001149458, -0.0054332735, 0.01886985, 0.001149458, 0.0062694075, 0.019571949, 0.001149458, 0.0054332637, 0.01886985, 0.001149458, -0.0054332735, 0.01886985, 0.001149458, -0.0054332735, 0.0007020985, 0.001149458, -0.006269417, 0, 0.001149458, -0.006269417, 0.019571949, 0.001149458)
+
+[node name="SI_Prop_Sign_BurgerAd_01" type="Node3D"]
+
+[node name="SI_Prop_Sign_BurgerAd_01" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+material_override = ExtResource("1_uhhep")
+mesh = SubResource("ArrayMesh_cy52x")
+
+[node name="SI_Prop_Sign_BurgerAd_01_col" type="StaticBody3D" parent="SI_Prop_Sign_BurgerAd_01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Prop_Sign_BurgerAd_01/SI_Prop_Sign_BurgerAd_01_col"]
+shape = SubResource("ConvexPolygonShape3D_hb1mg")

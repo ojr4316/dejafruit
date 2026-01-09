@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=4 uid="uid://cto7b8mjb3dkg"]
+
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_mvohe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mvohe"]
+resource_name = "lambert124"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 0.8)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_twfg1"]
+_surfaces = [{
+"aabb": AABB(-0.001075592, 0, -0.00086211204, 0.002151184, 0.002883755, 0.0017242241),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAQAEAAMABQACAAMAAgAFAAAABgADAAQAAwAGAAUABwAEAAEAAQAAAAcABAAHAAYACAAAAAUACQAGAAcACgAHAAAABwAKAAkAAAAIAAoABgAJAAsACwAFAAYACwAJAAoABQALAAgACgAIAAsA"),
+"name": "lambert124",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("4fqMOmH9PDtc/2E64fqMOgAAAABc/2E64fqMugAAAABc/2E64fqMugAAAABc/2G64fqMOgAAAABc/2G64fqMumH9PDtc/2E64fqMumH9PDtc/2G64fqMOmH9PDtc/2G6cT2TOWH9PDvhCmw5cT2TuWH9PDvhCmy5cT2TOWH9PDvhCmy5cT2TuWH9PDvhCmw5")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_csq1k"]
+resource_name = "SI_Food_Organic_KiwiFruit_01"
+_surfaces = [{
+"aabb": AABB(-0.001075592, 0, -0.00086211204, 0.002151184, 0.002883755, 0.0017242241),
+"attribute_data": PackedByteArray("bHi1PnvrGT9seLU+fOsZP3B4tT586xk/cHi1PnvrGT9kppU+CX4aP2SmlT4Jfho/aKaVPgl+Gj9oppU+CX4aP2x4tT586xk/bHi1PnvrGT9weLU+e+sZP3B4tT586xk/zFOXPn3rGT/MU5c+fOsZP85Tlz586xk/zlOXPn3rGT9wz6g+e+sZP3DPqD586xk/cs+oPnzrGT9yz6g+e+sZP3LPqD576xk/cs+oPnzrGT9yz6g+fOsZP3LPqD576xk/Zo7HPnvrGT9mjsc+e+sZP2qOxz576xk/ao7HPnvrGT9mjsc+e+sZP2aOxz576xk/Zo7HPnvrGT9mjsc+e+sZP2qOxz576xk/ao7HPnvrGT9mjsc+e+sZP2aOxz576xk/ao7HPnvrGT9qjsc+e+sZP2qOxz576xk/ao7HPnvrGT8="),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwAIAAhACIAIgAjACAAJAAlACYAJgAnACQA"),
+"material": SubResource("StandardMaterial3D_mvohe"),
+"name": "lambert124",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("4fqMOmH9PDtc/2E64fqMOgAAAABc/2E64fqMugAAAABc/2E64fqMumH9PDtc/2E6cT2TOWH9PDvhCmy5cT2TOWH9PDvhCmw5cT2TuWH9PDvhCmw5cT2TuWH9PDvhCmy54fqMOgAAAABc/2G64fqMOmH9PDtc/2G64fqMumH9PDtc/2G64fqMugAAAABc/2G64fqMOgAAAABc/2E64fqMOgAAAABc/2G64fqMugAAAABc/2G64fqMugAAAABc/2E64fqMOmH9PDtc/2G64fqMOgAAAABc/2G64fqMOgAAAABc/2E64fqMOmH9PDtc/2E64fqMumH9PDtc/2E64fqMugAAAABc/2E64fqMugAAAABc/2G64fqMumH9PDtc/2G6cT2TOWH9PDvhCmw54fqMOmH9PDtc/2E64fqMumH9PDtc/2E6cT2TuWH9PDvhCmw5cT2TOWH9PDvhCmy54fqMOmH9PDtc/2G64fqMOmH9PDtc/2E6cT2TOWH9PDvhCmw5cT2TuWH9PDvhCmy54fqMumH9PDtc/2G64fqMOmH9PDtc/2G6cT2TOWH9PDvhCmy5cT2TuWH9PDvhCmw54fqMumH9PDtc/2E64fqMumH9PDtc/2G6cT2TuWH9PDvhCmy5/3//fwAA/z//f/9/AAD/P/9//38AAP8//3//fwAA/z//f///////v/9///////+//3///////7//f///////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+//38AAAAA/7//fwAAAAD/v/9/AAAAAP+//38AAAAA/7////9//3//P////3//f/8/////f/9//z////9//3//PwAA/3////+/AAD/f////78AAP9/////vwAA/3////+//3///////7//f///////v/9///////+//3///////7//f///////v/9///////+//3///////7//f///////v/9//v////8//3/+/////z//f/7/////P/9//v////8//3///////7//f///////v/9///////+//3///////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_twfg1")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_elq6x"]
+points = PackedVector3Array(0.001075592, 0.002883755, 0.00086211204, 0.001075592, 0, 0.00086211204, -0.001075592, 0, 0.00086211204, -0.001075592, 0.002883755, 0.00086211204, 0.00028083802, 0.002883755, -0.00022510767, 0.00028083802, 0.002883755, 0.00022510767, -0.00028083802, 0.002883755, 0.00022510767, -0.00028083802, 0.002883755, -0.00022510767, 0.001075592, 0, -0.00086211204, 0.001075592, 0.002883755, -0.00086211204, -0.001075592, 0.002883755, -0.00086211204, -0.001075592, 0, -0.00086211204, 0.001075592, 0, 0.00086211204, 0.001075592, 0, -0.00086211204, -0.001075592, 0, -0.00086211204, -0.001075592, 0, 0.00086211204, 0.001075592, 0.002883755, -0.00086211204, 0.001075592, 0, -0.00086211204, 0.001075592, 0, 0.00086211204, 0.001075592, 0.002883755, 0.00086211204, -0.001075592, 0.002883755, 0.00086211204, -0.001075592, 0, 0.00086211204, -0.001075592, 0, -0.00086211204, -0.001075592, 0.002883755, -0.00086211204, 0.00028083802, 0.002883755, 0.00022510767, 0.001075592, 0.002883755, 0.00086211204, -0.001075592, 0.002883755, 0.00086211204, -0.00028083802, 0.002883755, 0.00022510767, 0.00028083802, 0.002883755, -0.00022510767, 0.001075592, 0.002883755, -0.00086211204, 0.001075592, 0.002883755, 0.00086211204, 0.00028083802, 0.002883755, 0.00022510767, -0.00028083802, 0.002883755, -0.00022510767, -0.001075592, 0.002883755, -0.00086211204, 0.001075592, 0.002883755, -0.00086211204, 0.00028083802, 0.002883755, -0.00022510767, -0.00028083802, 0.002883755, 0.00022510767, -0.001075592, 0.002883755, 0.00086211204, -0.001075592, 0.002883755, -0.00086211204, -0.00028083802, 0.002883755, -0.00022510767)
+
+[node name="SI_Food_Organic_KiwiFruit_01" type="Node3D"]
+
+[node name="SI_Food_Organic_KiwiFruit_01" type="MeshInstance3D" parent="."]
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
+material_override = ExtResource("1_mvohe")
+mesh = SubResource("ArrayMesh_csq1k")
+
+[node name="SI_Food_Organic_KiwiFruit_01_col" type="StaticBody3D" parent="SI_Food_Organic_KiwiFruit_01"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Food_Organic_KiwiFruit_01/SI_Food_Organic_KiwiFruit_01_col"]
+shape = SubResource("ConvexPolygonShape3D_elq6x")
