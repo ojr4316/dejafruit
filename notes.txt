@@ -1,1 +1,29 @@
 DEJA FRUIT
+
+**Anomalies**
+1. Lights flicker out
+2. Fruit begins endlessly duplicating
+3. All other shoppers are starring at you
+4. Fruit is rotten
+5. Cereal boxes blink
+6. Distorted music
+7. Whispers from the aisle over
+8. All prices are $6.66
+9. Silly sign changed ("DIET"=>"DIE")
+10. Empty shelves
+11. Player/world slightly scaled
+12. Creepy poster
+13. More/less wet floor
+14. Small box with a pulsing light and beeping noise
+15. Cashier missing face
+16. Customer service missing
+17. Fruit is meat
+18. Backroom door is ajar, on view => Jumpscare
+19. Props blocking aisles are removed
+20. Leak/Room fills with water
+21. Explosion sound => Blackout => Emergency lights
+22. All fruit is tomatoes.
+23. Person following you
+24. Slippery floor
+25. Recently knocked down random food
+26. Everyone is dead on the ground
