@@ -1,26 +1,35 @@
-[gd_scene load_steps=5 format=3 uid="uid://cmekmtqfodwda"]
+[gd_scene load_steps=9 format=3 uid="uid://cmekmtqfodwda"]
 
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="PackedScene" uid="uid://bt7bgrk3re2un" path="res://scenes/dynamic/door.tscn" id="2_bl13t"]
+[ext_resource type="PackedScene" uid="uid://p3bru0lmqnxi" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
+[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
 
-[sub_resource type="Environment" id="Environment_errlg"]
-background_energy_multiplier = 0.0
-ambient_light_energy = 0.0
-glow_enabled = true
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lpvoh"]
+sky_top_color = Color(0.49047506, 0.5369292, 0.707911, 1)
+sky_horizon_color = Color(0.7662171, 0.7700807, 0.8038261, 1)
+ground_horizon_color = Color(0.7662171, 0.7700807, 0.8038261, 1)
+
+[sub_resource type="Sky" id="Sky_at5dv"]
+sky_material = SubResource("ProceduralSkyMaterial_lpvoh")
+
+[sub_resource type="Environment" id="Environment_jcd4p"]
+background_mode = 2
+sky = SubResource("Sky_at5dv")
+tonemap_mode = 2
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ij1v8"]
 data = PackedVector3Array(-5, -0.1, 5, -5, -0.1, -5, -5, 0.1, -5, 5, -0.1, -5, -5, -0.1, -5, -5, -0.1, 5, -5, 0.1, -5, -5, -0.1, -5, 5, -0.1, -5, -5, 0.1, -5, -5, 0.1, 5, -5, -0.1, 5, -5, -0.1, 5, -5, 0.1, 5, 5, 0.1, 5, 5, 0.1, 5, -5, 0.1, 5, -5, 0.1, -5, -5, -0.1, 5, 5, -0.1, 5, 5, -0.1, -5, 5, 0.1, 5, 5, -0.1, 5, -5, -0.1, 5, 5, -0.1, -5, 5, -0.1, 5, 5, 0.1, 5, 5, -0.1, -5, 5, 0.1, -5, -5, 0.1, -5, -5, 0.1, -5, 5, 0.1, -5, 5, 0.1, 5, 5, 0.1, 5, 5, 0.1, -5, 5, -0.1, -5)
 
 [node name="Test" type="Node3D"]
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jcd4p")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.7992233, 0.5205109, -0.30051714, 2.7805946e-08, 0.49999994, 0.86602545, 0.6010343, -0.69214773, 0.39961156, 0, 3.1507, 0)
-light_energy = 2.2
 shadow_enabled = true
 directional_shadow_max_distance = 10.0
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_errlg")
 
 [node name="floor" type="StaticBody3D" parent="."]
 
@@ -34,4 +43,22 @@ shape = SubResource("ConcavePolygonShape3D_ij1v8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43253338, 0.10284007, -0.048513412)
 
 [node name="Door" parent="." instance=ExtResource("2_bl13t")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7081823, 0.23533154, -3.4783158)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -2.5)
+
+[node name="SI_Env_Wall_01" parent="." instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2.5)
+
+[node name="SI_Env_Wall_02" parent="." instance=ExtResource("3_74lek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
+
+[node name="SI_Env_Wall_03" parent="." instance=ExtResource("3_74lek")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, 0, -2.5)
+
+[node name="SI_Env_Wall_04" parent="." instance=ExtResource("3_74lek")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.5, 0, -2.5)
+
+[node name="SI_Env_Wall_Door_Small_01" parent="." instance=ExtResource("4_j5jx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -2.5)
+
+[node name="SI_Env_Wall_Door_Small_02" parent="." instance=ExtResource("4_j5jx5")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, -2.5)

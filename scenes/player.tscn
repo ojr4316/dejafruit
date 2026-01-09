@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://c5txf22p2r1eb" path="res://interactor_area.gd" id="2_qhqgy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
+radius = 0.34814453
+height = 1.7856445
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dqkch"]
 size = Vector3(0.6715088, 0.49290538, 0.888916)
@@ -550,7 +552,7 @@ radius = 2.5
 script = ExtResource("1_g2els")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.89282227, 0)
 shape = SubResource("CapsuleShape3D_g2els")
 
 [node name="Root" type="Node3D" parent="."]

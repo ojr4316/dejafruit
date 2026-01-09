@@ -12,10 +12,10 @@ var is_moving := false
 
 var active_tween: Tween = null
 
-func open() -> void:
+func open(invert_direction := false) -> void:
 	if active_tween: active_tween.stop()
 	active_tween = create_tween()
-	active_tween.tween_property(body, "rotation_degrees:y", DEGREES_OPEN, 1).set_trans(Tween.TRANS_CUBIC)
+	active_tween.tween_property(body, "rotation_degrees:y", -DEGREES_OPEN if invert_direction else DEGREES_OPEN, 1).set_trans(Tween.TRANS_CUBIC)
 	is_moving = true
 	is_open = true
 	
@@ -35,9 +35,9 @@ func close() -> void:
 	closed.emit()
 	is_moving = false
 
-func toggle() -> void:
+func toggle(invert_direction := false) -> void:
 	if is_open: close()
-	else: open()
+	else: open(invert_direction)
 
-func _on_interaction_ended() -> void:
-	toggle()
+func _on_interaction_ended(invert_direction: bool) -> void:
+	toggle(invert_direction)
