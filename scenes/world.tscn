@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://e0uqpedqtca3"]
+[gd_scene load_steps=38 format=3 uid="uid://e0uqpedqtca3"]
 
 [ext_resource type="PackedScene" uid="uid://dylehg03f13oi" path="res://scenes/prefabs/SI/Env/Floor/01.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://cn2kq1xlh0ffe" path="res://scenes/prefabs/SI/Env/Wall/CornerBlock/large.tscn" id="3_4wyf3"]
@@ -32,6 +32,11 @@
 [ext_resource type="PackedScene" uid="uid://cle1vbu25pynk" path="res://scenes/prefabs/SI/Prop/Freezer/02.tscn" id="30_x2olw"]
 [ext_resource type="PackedScene" uid="uid://cu5k7nvwyx6dp" path="res://scenes/prefabs/SI/Prop/Freezer/03.tscn" id="31_817gm"]
 [ext_resource type="PackedScene" uid="uid://bcy6fkw0cym0w" path="res://scenes/prefabs/SI/Env/Pillar.tscn" id="32_ggc52"]
+[ext_resource type="PackedScene" uid="uid://diakhrjdc2uhu" path="res://scenes/prefabs/SI/Prop/Shelf/Isle/Preset/01.tscn" id="33_rup4s"]
+[ext_resource type="PackedScene" uid="uid://vs12ovcs3h7g" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/04.tscn" id="34_x2olw"]
+[ext_resource type="PackedScene" uid="uid://dogvvwawd6ti0" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/03.tscn" id="35_817gm"]
+[ext_resource type="PackedScene" uid="uid://brp3nvk7ycntv" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/01.tscn" id="36_ggc52"]
+[ext_resource type="PackedScene" uid="uid://dfky42kealqmy" path="res://scenes/prefabs/SI/Prop/Mat/01.tscn" id="37_817gm"]
 
 [node name="World" type="Node3D"]
 
@@ -750,7 +755,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -11.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0, 7.5)
 
 [node name="SI_Prop_JanitorCart_01" parent="." instance=ExtResource("17_luhhm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 11)
 
 [node name="SI_Prop_ProduceSection_01" parent="." instance=ExtResource("18_fh13f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -3.5)
@@ -763,6 +768,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -3.5)
 
 [node name="SI_Prop_ProduceSection_04" parent="." instance=ExtResource("21_f17e3")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16, 0, -1.5)
+
+[node name="SI_Prop_ProduceSection_13" parent="." instance=ExtResource("21_f17e3")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16, 0, 4.5)
 
 [node name="SI_Prop_ProduceSection_05" parent="." instance=ExtResource("18_fh13f")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16, 0, 0.5)
@@ -807,22 +815,22 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -11,
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.5, 0, 16)
 
 [node name="SI_Prop_Freezer_01" parent="." instance=ExtResource("29_f17e3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.5, 0, 14)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 14)
 
 [node name="SI_Prop_Freezer_06" parent="." instance=ExtResource("29_f17e3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5, 0, 14)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 14)
 
 [node name="SI_Prop_Freezer_02" parent="." instance=ExtResource("30_x2olw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 14)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 0, 14)
 
 [node name="SI_Prop_Freezer_03" parent="." instance=ExtResource("31_817gm")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 13, 0, 13)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 12.5, 0, 13)
 
 [node name="SI_Prop_Freezer_04" parent="." instance=ExtResource("29_f17e3")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14.5, 0, 13)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 14, 0, 13)
 
 [node name="SI_Prop_Freezer_05" parent="." instance=ExtResource("29_f17e3")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 11.5, 0, 13)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 11, 0, 13)
 
 [node name="SI_Env_Pillar" parent="." instance=ExtResource("32_ggc52")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 1.5)
@@ -832,3 +840,60 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -2.5
 
 [node name="SI_Env_Wall_Large_Door_05" parent="." instance=ExtResource("6_i7141")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10, 0, 17.5)
+
+[node name="SI_Prop_Shelf_Isle_Preset_01" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.0369134, 0, 12.5)
+
+[node name="SI_Prop_Shelf_Isle_Preset_04" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9630866, 0, 12.5)
+
+[node name="SI_Prop_Shelf_Isle_Preset_03" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6, 0, 12.5)
+
+[node name="SI_Prop_Shelf_Isle_Preset_08" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10, 0, 12.5)
+
+[node name="SI_Prop_Shelf_Isle_Preset_02" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.45301998, 0, 5.654536)
+
+[node name="SI_Prop_Shelf_Isle_Preset_06" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.45302, 0, 5.654536)
+
+[node name="SI_Prop_Shelf_Isle_Preset_07" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.45302, 0, 5.654536)
+
+[node name="SI_Prop_Shelf_Isle_Preset_05" parent="." instance=ExtResource("33_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.54698, 0, 5.654536)
+
+[node name="SI_Prop_ShoppingTrolley_04" parent="." instance=ExtResource("34_x2olw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+
+[node name="SI_Prop_ShoppingTrolley_03" parent="." instance=ExtResource("35_817gm")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, 3.781911, 0, 10)
+
+[node name="SI_Prop_ShoppingTrolley_05" parent="." instance=ExtResource("34_x2olw")]
+transform = Transform3D(0.97978175, 0, -0.2000691, 0, 1, 0, 0.2000691, 0, 0.97978175, 2.6626782, 0, 9.401792)
+
+[node name="SI_Prop_ShoppingTrolley_01" parent="." instance=ExtResource("36_ggc52")]
+transform = Transform3D(-0.32568365, 0, 0.9454788, 0, 1, 0, -0.9454788, 0, -0.32568365, 0.42825192, -7.4505806e-07, 13.276961)
+
+[node name="SI_Prop_ProduceSection_07" parent="." instance=ExtResource("18_fh13f")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -14, 0, -1.5)
+
+[node name="SI_Prop_ProduceSection_08" parent="." instance=ExtResource("19_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -14, 0, 0.5)
+
+[node name="SI_Prop_ProduceSection_09" parent="." instance=ExtResource("20_4kbfs")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11, 0, 0.5)
+
+[node name="SI_Prop_ProduceSection_10" parent="." instance=ExtResource("21_f17e3")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11, 0, 2.5)
+
+[node name="SI_Prop_ProduceSection_11" parent="." instance=ExtResource("19_rup4s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11, 0, 4.5)
+
+[node name="SI_Prop_ProduceSection_12" parent="." instance=ExtResource("20_4kbfs")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -14, 0, 2.5)
+
+[node name="SI_Prop_Mat_01" parent="." instance=ExtResource("37_817gm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.744991, 0, -4.5)
