@@ -1,11 +1,7 @@
-[gd_scene load_steps=8 format=4 uid="uid://bt7bgrk3re2un"]
+[gd_scene load_steps=7 format=4 uid="uid://cul0ey4odfq6g"]
 
-[ext_resource type="Script" uid="uid://ypguc3o3otfp" path="res://scripts/door.gd" id="1_mpeb1"]
-[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="2_1x56x"]
-[ext_resource type="Script" uid="uid://b5agh766vg070" path="res://scripts/interactable_area.gd" id="2_hphhm"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_hphhm"]
-size = Vector3(1.0653731, 2, 0.6175962)
+[ext_resource type="Script" uid="uid://bb5kmrly8ld5e" path="res://scripts/auto_door.gd" id="1_6wbv4"]
+[ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="2_7rhpp"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7mq4d"]
 _surfaces = [{
@@ -22,7 +18,7 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_mfofw"]
+[sub_resource type="ArrayMesh" id="ArrayMesh_bceg3"]
 resource_name = "SI_Env_Door_01"
 _surfaces = [{
 "aabb": AABB(-3.8146972e-08, 0, 0, 0.019965172, 0.037519444, 0.0015337944),
@@ -31,7 +27,7 @@ _surfaces = [{
 "index_count": 228,
 "index_data": PackedByteArray("IgAjACQAJAAlACIAJgAnACgAKAApACYAKgAAAAIAAgAAACsAKwABAAIAKwAsAC0ALgAtACwALAAvAC4ALwAsACoAMAAuAC8AKgAxAC8AMQAqADIAMgAFADEABAAxAAUALwAGADAABwAwAAYABgAEADMANAAzAAQAMwAIAAYABgAIAAcABAA1ADQABwAIADYANAA1ADYANgA3AAcANwA2ADUANQADADcAOAADADAAOAA3AAMAOQA6ADsAOwA8ADkAPQA+AD8APwBAAD0AQQBCAEMAQwBEAEEARQBGAEcARwBIAEUACwBJAAkASgALAAkACQAKAEoASwBKAEwASwBMAE0ATQBOAEsASQBLAE4ATgBNAE8ATgBQAEkAUQBJAFAAUAAOAFEAUAANAA4ATwAPAE4ADwBPABAAUgANAA8ADQBSAFMADwARAFIAEAARAA8AUwBUAA0AVQARABAAVABTAFUAEABWAFUAVABVAFYAVgAMAFQADABXAE8AVgBXAAwAWABZAFoAWgBbAFgAXABdAF4AXgBfAFwAEgATABQAFAAVABIAFgAXABgAGAAZABYAGgAbABwAHAAdABoAHgAfACAAIAAhAB4A"),
 "lods": [0.0053816084, PackedByteArray("AAABAAIAAwABAAAABAAAAAIAAgAFAAQAAAAGAAMAAAAEAAYABQADAAcABwADAAYABAAFAAgABwAIAAUABgAEAAgABgAIAAcACQAKAAsACwAKAAwACQALAA0ADQAOAAkADAAPAAsADwANAAsAEAAMAA4ADwAMABAAEQAOAA0AEQANAA8ADgARABAAEAARAA8AEgATABQAFAAVABIAFgAXABgAGAAZABYAGgAbABwAHAAdABoAHgAfACAAIAAhAB4A")],
-"material": ExtResource("2_1x56x"),
+"material": ExtResource("2_7rhpp"),
 "name": "lambert10",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -41,30 +37,48 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_7mq4d")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pcdvn"]
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5fanx"]
 points = PackedVector3Array(0.0024946975, 0.035112146, 0.0015337944, -3.8146972e-08, 0, 0.0015337944, -3.8146972e-08, 0.037480555, 0.0015337944, 0.019965135, 0, 0.0015337944, 0.017470397, 0.035139207, 0.0015337944, 0.019965135, 0.037519444, 0.0015337944, 0.017470397, 0.01678422, 0.0015337944, 0.018185196, 0.020706452, 0.0015337944, 0.018182144, 0.02278536, 0.0015337944, -3.8146972e-08, 0.037480555, 0, -3.8146972e-08, 0, 0, 0.0024946975, 0.035112146, 0, 0.019965135, 0, 0, 0.017470397, 0.035139207, 0, 0.019965135, 0.037519444, 0, 0.017470397, 0.01678422, 0, 0.018185196, 0.020706452, 0, 0.018182144, 0.02278536, 0, -3.8146972e-08, 0.037480555, 0.0015337944, -3.8146972e-08, 0.037480555, 0, 0.019965135, 0.037519444, 0, 0.019965135, 0.037519444, 0.0015337944, 0.019965135, 0.037519444, 0.0015337944, 0.019965135, 0.037519444, 0, 0.019965135, 0, 0, 0.019965135, 0, 0.0015337944, -3.8146972e-08, 0, 0, -3.8146972e-08, 0.037480555, 0, -3.8146972e-08, 0.037480555, 0.0015337944, -3.8146972e-08, 0, 0.0015337944, 0.019965135, 0, 0.0015337944, 0.019965135, 0, 0, -3.8146972e-08, 0, 0, -3.8146972e-08, 0, 0.0015337944, 0.0024946975, 0.035112146, 0.0015337944, 0.008055916, 0.035121165, 0.0015337944, 0.008055916, 0.01678422, 0.0015337944, 0.0024946975, 0.01678422, 0.0015337944, 0.018182144, 0.02278536, 0.0015337944, 0.018182144, 0.0250604, 0.0015337944, 0.019253312, 0.0250604, 0.0015337944, 0.019253312, 0.022785291, 0.0015337944, 0.008055916, 0.035121165, 0.0015337944, 0.0024946975, 0.01678422, 0.0015337944, 0.008055916, 0.01678422, 0.0015337944, -3.8146972e-08, 0, 0.0015337944, 0.019965135, 0, 0.0015337944, 0.011909256, 0.01678422, 0.0015337944, 0.018185196, 0.01678422, 0.0015337944, 0.011909256, 0.035130188, 0.0015337944, -3.8146972e-08, 0.037480555, 0.0015337944, 0.018182144, 0.0250604, 0.0015337944, 0.019253312, 0.0250604, 0.0015337944, 0.019965135, 0.037519444, 0.0015337944, 0.019253312, 0.022785291, 0.0015337944, 0.019250335, 0.02070643, 0.0015337944, 0.019250335, 0.01678422, 0.0015337944, 0.011909256, 0.035130188, 0.0015337944, 0.017470397, 0.035139207, 0.0015337944, 0.017470397, 0.01678422, 0.0015337944, 0.011909256, 0.01678422, 0.0015337944, 0.019250335, 0.02070643, 0.0015337944, 0.019250335, 0.01678422, 0.0015337944, 0.018185196, 0.01678422, 0.0015337944, 0.018185196, 0.020706452, 0.0015337944, 0.0024946975, 0.035112146, 0, 0.0024946975, 0.01678422, 0, 0.008055916, 0.01678422, 0, 0.008055916, 0.035121165, 0, 0.019253312, 0.0250604, 0, 0.018182144, 0.0250604, 0, 0.018182144, 0.02278536, 0, 0.019253312, 0.022785291, 0, 0.008055916, 0.035121165, 0, 0.0024946975, 0.01678422, 0, 0.008055916, 0.01678422, 0, -3.8146972e-08, 0, 0, 0.019965135, 0, 0, 0.011909256, 0.01678422, 0, 0.018185196, 0.01678422, 0, 0.011909256, 0.035130188, 0, -3.8146972e-08, 0.037480555, 0, 0.018182144, 0.0250604, 0, 0.019253312, 0.0250604, 0, 0.019965135, 0.037519444, 0, 0.019253312, 0.022785291, 0, 0.019250335, 0.02070643, 0, 0.019250335, 0.01678422, 0, 0.011909256, 0.035130188, 0, 0.011909256, 0.01678422, 0, 0.017470397, 0.01678422, 0, 0.017470397, 0.035139207, 0, 0.019250335, 0.02070643, 0, 0.018185196, 0.020706452, 0, 0.018185196, 0.01678422, 0, 0.019250335, 0.01678422, 0)
 
-[node name="Door" type="Node3D"]
-script = ExtResource("1_mpeb1")
+[sub_resource type="BoxShape3D" id="BoxShape3D_w7gmq"]
+size = Vector3(2.5478516, 2.453125, 2.5668945)
 
-[node name="AnimatableBody3D" type="AnimatableBody3D" parent="."]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0.75, -0.005, -0.035)
+[node name="AutoDoor" type="Node3D"]
+script = ExtResource("1_6wbv4")
 
-[node name="InteractionArea" type="Area3D" parent="AnimatableBody3D" node_paths=PackedStringArray("interactable")]
-transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -0.015, 0.0001, 0.0007)
-script = ExtResource("2_hphhm")
-interactable = NodePath("../..")
+[node name="Doors" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.186, 0, -0.035)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D/InteractionArea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.238872, 1, 0.031363033)
-shape = SubResource("BoxShape3D_hphhm")
+[node name="LeftBody" type="AnimatableBody3D" parent="Doors"]
+unique_name_in_owner = true
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="AnimatableBody3D"]
-material_override = ExtResource("2_1x56x")
-mesh = SubResource("ArrayMesh_mfofw")
+[node name="Left" type="MeshInstance3D" parent="Doors/LeftBody"]
+material_override = ExtResource("2_7rhpp")
+mesh = SubResource("ArrayMesh_bceg3")
 skeleton = NodePath("")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D"]
-shape = SubResource("ConvexPolygonShape3D_pcdvn")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Doors/LeftBody"]
+shape = SubResource("ConvexPolygonShape3D_5fanx")
 
-[connection signal="interaction_ended" from="AnimatableBody3D/InteractionArea" to="." method="_on_interaction_ended"]
+[node name="RightBody" type="AnimatableBody3D" parent="Doors"]
+unique_name_in_owner = true
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 1, 0, 0)
+
+[node name="Right" type="MeshInstance3D" parent="Doors/RightBody"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020000003, 0, 0)
+material_override = ExtResource("2_7rhpp")
+mesh = SubResource("ArrayMesh_bceg3")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Doors/RightBody"]
+shape = SubResource("ConvexPolygonShape3D_5fanx")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2260742, 0.7265625, 0.052490234)
+shape = SubResource("BoxShape3D_w7gmq")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_body_exited"]

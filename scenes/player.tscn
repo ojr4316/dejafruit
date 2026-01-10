@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://ckur84kiauw6f" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Script" uid="uid://bypfdpblntap6" path="res://scripts/ui.gd" id="2_dqkch"]
-[ext_resource type="Script" path="res://interactor_area.gd" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://c5txf22p2r1eb" path="res://interactor_area.gd" id="2_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://rb4x5vxibgr8" path="res://assets/textures/reticle.png" id="3_qlg0r"]
 [ext_resource type="Theme" uid="uid://d2jpdyrrbioyb" path="res://assets/main.tres" id="3_tuyoq"]
 
@@ -602,9 +602,10 @@ shape = SubResource("CapsuleShape3D_g2els")
 [node name="Root" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
-[node name="InteractorArea" type="Area3D" parent="Root"]
+[node name="InteractorArea" type="Area3D" parent="Root" node_paths=PackedStringArray("player")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
 script = ExtResource("2_qhqgy")
+player = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Root/InteractorArea"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.042013764, 1.2074366, -0.52998435)
