@@ -2,9 +2,9 @@
 
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="PackedScene" uid="uid://bt7bgrk3re2un" path="res://scenes/dynamic/door.tscn" id="2_bl13t"]
-[ext_resource type="PackedScene" uid="uid://p3bru0lmqnxi" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
-[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
-[ext_resource type="PackedScene" uid="uid://cul0ey4odfq6g" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://dtm5iphhdiec4" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
+[ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
+[ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
 [ext_resource type="PackedScene" uid="uid://cl71lgxvj2k2l" path="res://scenes/prefabs/GangWarfareCharacters/asian_gangster.tscn" id="6_lpvoh"]
 [ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="7_at5dv"]
 [ext_resource type="PackedScene" uid="uid://ea2m70vvc33o" path="res://scenes/prefabs/GangWarfareCharacters/gangm.tscn" id="8_ghpyy"]
@@ -28,7 +28,7 @@ sky = SubResource("Sky_at5dv")
 tonemap_mode = 2
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_44saj"]
-data = PackedVector3Array(-5, -0.1, 5, -5, -0.1, -5, -5, 0.1, -5, 5, -0.1, -5, -5, -0.1, -5, -5, -0.1, 5, -5, 0.1, -5, -5, -0.1, -5, 5, -0.1, -5, -5, 0.1, -5, -5, 0.1, 5, -5, -0.1, 5, -5, -0.1, 5, -5, 0.1, 5, 5, 0.1, 5, 5, 0.1, 5, -5, 0.1, 5, -5, 0.1, -5, -5, -0.1, 5, 5, -0.1, 5, 5, -0.1, -5, 5, 0.1, 5, 5, -0.1, 5, -5, -0.1, 5, 5, -0.1, -5, 5, -0.1, 5, 5, 0.1, 5, 5, -0.1, -5, 5, 0.1, -5, -5, 0.1, -5, -5, 0.1, -5, 5, 0.1, -5, 5, 0.1, 5, 5, 0.1, 5, 5, 0.1, -5, 5, -0.1, -5)
+data = PackedVector3Array(-10, -0.1, 10, -10, -0.1, -10, -10, 0.1, -10, 10, -0.1, -10, -10, -0.1, -10, -10, -0.1, 10, -10, 0.1, -10, -10, -0.1, -10, 10, -0.1, -10, -10, 0.1, -10, -10, 0.1, 10, -10, -0.1, 10, -10, -0.1, 10, -10, 0.1, 10, 10, 0.1, 10, 10, 0.1, 10, -10, 0.1, 10, -10, 0.1, -10, -10, -0.1, 10, 10, -0.1, 10, 10, -0.1, -10, 10, 0.1, 10, 10, -0.1, 10, -10, -0.1, 10, 10, -0.1, -10, 10, -0.1, 10, 10, 0.1, 10, 10, -0.1, -10, 10, 0.1, -10, -10, 0.1, -10, -10, 0.1, -10, 10, 0.1, -10, 10, 0.1, 10, 10, 0.1, 10, 10, 0.1, -10, 10, -0.1, -10)
 
 [node name="Test" type="Node3D"]
 
@@ -43,11 +43,9 @@ directional_shadow_max_distance = 10.0
 [node name="floor" type="StaticBody3D" parent="."]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="floor"]
-transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
-size = Vector3(10, 0.2, 10)
+size = Vector3(20, 0.2, 20)
 
-[node name="CSGBakedCollisionShape3D2" type="CollisionShape3D" parent="floor"]
-transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
+[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="floor"]
 shape = SubResource("ConcavePolygonShape3D_44saj")
 
 [node name="Player" parent="." instance=ExtResource("1_errlg")]

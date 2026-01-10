@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cc2qjlls4uun5" path="res://assets/models/GangWarfare/characters/SK_Chr_Cook_Male_01.fbx" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://4gbeelx65cyd" path="res://scenes/prefabs/SI/Env/Wall/Large/01.tscn" id="5_qfnet"]
 [ext_resource type="PackedScene" uid="uid://yyv6sqpt4xso" path="res://scenes/prefabs/SI/Env/Wall/Large/Window/05.tscn" id="6_4mrxx"]
-[ext_resource type="PackedScene" uid="uid://2eoplp2o2b0m" path="res://scenes/prefabs/SI/Env/Wall/Large/Door/01.tscn" id="6_i7141"]
+[ext_resource type="PackedScene" uid="uid://dag5w57qw061q" path="res://scenes/prefabs/SI/Env/Wall/Large/Door/01.tscn" id="6_i7141"]
 [ext_resource type="PackedScene" uid="uid://sxe74olr34qv" path="res://scenes/prefabs/SI/Prop/CheckoutCounter/01.tscn" id="8_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://t7oj5xrhhbs3" path="res://scenes/prefabs/SI/Prop/ATM/01.tscn" id="9_w7kh3"]
 [ext_resource type="PackedScene" uid="uid://by4pmqe1ug5gf" path="res://scenes/prefabs/SI/Prop/Basket/Stack/02.tscn" id="10_e3hyu"]
@@ -32,12 +32,12 @@
 [ext_resource type="PackedScene" uid="uid://cle1vbu25pynk" path="res://scenes/prefabs/SI/Prop/Freezer/02.tscn" id="30_x2olw"]
 [ext_resource type="PackedScene" uid="uid://cu5k7nvwyx6dp" path="res://scenes/prefabs/SI/Prop/Freezer/03.tscn" id="31_817gm"]
 [ext_resource type="PackedScene" uid="uid://bcy6fkw0cym0w" path="res://scenes/prefabs/SI/Env/Pillar.tscn" id="32_ggc52"]
-[ext_resource type="PackedScene" uid="uid://diakhrjdc2uhu" path="res://scenes/prefabs/SI/Prop/Shelf/Isle/Preset/01.tscn" id="33_rup4s"]
+[ext_resource type="PackedScene" uid="uid://bdxdjeps2ivmk" path="res://scenes/prefabs/SI/Prop/Shelf/Isle/Preset/01.tscn" id="33_rup4s"]
 [ext_resource type="PackedScene" uid="uid://vs12ovcs3h7g" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/04.tscn" id="34_x2olw"]
 [ext_resource type="PackedScene" uid="uid://dogvvwawd6ti0" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/03.tscn" id="35_817gm"]
 [ext_resource type="PackedScene" uid="uid://brp3nvk7ycntv" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/01.tscn" id="36_ggc52"]
 [ext_resource type="PackedScene" uid="uid://dfky42kealqmy" path="res://scenes/prefabs/SI/Prop/Mat/01.tscn" id="37_817gm"]
-[ext_resource type="PackedScene" uid="uid://cul0ey4odfq6g" path="res://scenes/dynamic/auto_door.tscn" id="38_ggc52"]
+[ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="38_ggc52"]
 [ext_resource type="PackedScene" uid="uid://bv22dr6qm6n3q" path="res://scenes/prefabs/SI/Prop/CoffeeMachine/01.tscn" id="41_6oujy"]
 [ext_resource type="PackedScene" uid="uid://cu27jky8quac1" path="res://scenes/prefabs/SI/Prop/AlcoholShelf/02.tscn" id="42_rga7q"]
 [ext_resource type="PackedScene" uid="uid://couqw7nowftj2" path="res://scenes/prefabs/SI/Prop/SelfCheckout/01.tscn" id="43_hi6a0"]
@@ -547,40 +547,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 15)
 
 [node name="SI_Env_Floor_157" parent="floors" instance=ExtResource("1_nnsk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5, 0, 15)
-
-[node name="lights" type="Node3D" parent="."]
-
-[node name="SpotLight3D" type="SpotLight3D" parent="lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -8.5, 4.5, 0)
-light_color = Color(0.9999992, 0.99357826, 0.71383685, 1)
-light_size = 0.2
-shadow_enabled = true
-spot_range = 10.0
-spot_angle = 60.0
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -15.5, 4.5, 0)
-light_color = Color(0.9999992, 0.99357826, 0.71383685, 1)
-light_size = 0.2
-shadow_enabled = true
-spot_range = 10.0
-spot_angle = 60.0
-
-[node name="SpotLight3D3" type="SpotLight3D" parent="lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -15.5, 4.5, 5)
-light_color = Color(0.9999992, 0.99357826, 0.71383685, 1)
-light_size = 0.2
-shadow_enabled = true
-spot_range = 10.0
-spot_angle = 60.0
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="lights"]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -8.5, 4.5, 5)
-light_color = Color(0.9999992, 0.99357826, 0.71383685, 1)
-light_size = 0.2
-shadow_enabled = true
-spot_range = 10.0
-spot_angle = 60.0
 
 [node name="ceiling" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)

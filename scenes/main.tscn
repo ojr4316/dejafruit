@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="2_sugp2"]
 
 [sub_resource type="Environment" id="Environment_0wfyh"]
-background_energy_multiplier = 0.06
+background_energy_multiplier = 0.4
 ambient_light_color = Color(0, 0, 0.078431375, 1)
 ambient_light_energy = 0.3
 tonemap_mode = 2
