@@ -1,8 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://bgq5cbwclwnkt"]
+[gd_scene load_steps=14 format=4 uid="uid://bgq5cbwclwnkt"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://ckur84kiauw6f" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Script" uid="uid://c5txf22p2r1eb" path="res://interactor_area.gd" id="2_qhqgy"]
+[ext_resource type="Script" uid="uid://bypfdpblntap6" path="res://scripts/ui.gd" id="2_dqkch"]
+[ext_resource type="Script" path="res://interactor_area.gd" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://rb4x5vxibgr8" path="res://assets/textures/reticle.png" id="3_qlg0r"]
+[ext_resource type="Theme" uid="uid://d2jpdyrrbioyb" path="res://assets/main.tres" id="3_tuyoq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.34814453
@@ -551,6 +554,47 @@ radius = 2.5
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_g2els")
 
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("2_dqkch")
+
+[node name="InteractText" type="RichTextLabel" parent="UI"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -45.5
+offset_right = 100.0
+offset_bottom = -5.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_tuyoq")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+bbcode_enabled = true
+text = "open door"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="interactor" type="TextureRect" parent="UI"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_tuyoq")
+texture = ExtResource("3_qlg0r")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.89282227, 0)
 shape = SubResource("CapsuleShape3D_g2els")
@@ -561,7 +605,6 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0
 [node name="InteractorArea" type="Area3D" parent="Root"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
 script = ExtResource("2_qhqgy")
-metadata/_custom_type_script = "uid://c5txf22p2r1eb"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Root/InteractorArea"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.042013764, 1.2074366, -0.52998435)
@@ -963,10 +1006,11 @@ libraries = {
 &"": SubResource("AnimationLibrary_2l0ya")
 }
 
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4273224, -0.12588853)
+
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.605067, 0)
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot"]
 shape = SubResource("SphereShape3D_g2els")
-
-[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D"]

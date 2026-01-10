@@ -41,3 +41,6 @@ func toggle(invert_direction := false) -> void:
 
 func _on_interaction_ended(invert_direction: bool) -> void:
 	toggle(invert_direction)
+
+func get_interact_text() -> String:
+	return ("Close" if is_open else "Open") + " Door"

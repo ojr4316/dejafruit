@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cmekmtqfodwda"]
+[gd_scene load_steps=9 format=3 uid="uid://dkrylb20v7wf"]
 
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="PackedScene" uid="uid://bt7bgrk3re2un" path="res://scenes/dynamic/door.tscn" id="2_bl13t"]
-[ext_resource type="PackedScene" uid="uid://p3bru0lmqnxi" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
-[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://dtm5iphhdiec4" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
+[ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lpvoh"]
 sky_top_color = Color(0.49047506, 0.5369292, 0.707911, 1)
