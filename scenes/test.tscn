@@ -1,10 +1,10 @@
-[gd_scene load_steps=17 format=3 uid="uid://dkrylb20v7wf"]
+[gd_scene load_steps=18 format=3 uid="uid://dkrylb20v7wf"]
 
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="PackedScene" uid="uid://bt7bgrk3re2un" path="res://scenes/dynamic/door.tscn" id="2_bl13t"]
-[ext_resource type="PackedScene" uid="uid://dtm5iphhdiec4" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
-[ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
-[ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://p3bru0lmqnxi" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
+[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://cul0ey4odfq6g" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
 [ext_resource type="PackedScene" uid="uid://cl71lgxvj2k2l" path="res://scenes/prefabs/GangWarfareCharacters/asian_gangster.tscn" id="6_lpvoh"]
 [ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="7_at5dv"]
 [ext_resource type="PackedScene" uid="uid://ea2m70vvc33o" path="res://scenes/prefabs/GangWarfareCharacters/gangm.tscn" id="8_ghpyy"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://c23thoxfh56i1" path="res://scenes/prefabs/GangWarfareCharacters/gangboss.tscn" id="10_7mbro"]
 [ext_resource type="PackedScene" uid="uid://b7uqaf4carqxq" path="res://scenes/prefabs/GangWarfareCharacters/agent_female.tscn" id="11_ff6ho"]
 [ext_resource type="PackedScene" uid="uid://bwaw0d4a3amqm" path="res://scenes/prefabs/GangWarfareCharacters/agent_male.tscn" id="12_7yos8"]
+[ext_resource type="PackedScene" uid="uid://f5phxulggugn" path="res://scenes/dynamic/double_door.tscn" id="13_44saj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lpvoh"]
 sky_top_color = Color(0.49047506, 0.5369292, 0.707911, 1)
@@ -26,7 +27,7 @@ background_mode = 2
 sky = SubResource("Sky_at5dv")
 tonemap_mode = 2
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ij1v8"]
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_44saj"]
 data = PackedVector3Array(-5, -0.1, 5, -5, -0.1, -5, -5, 0.1, -5, 5, -0.1, -5, -5, -0.1, -5, -5, -0.1, 5, -5, 0.1, -5, -5, -0.1, -5, 5, -0.1, -5, -5, 0.1, -5, -5, 0.1, 5, -5, -0.1, 5, -5, -0.1, 5, -5, 0.1, 5, 5, 0.1, 5, 5, 0.1, 5, -5, 0.1, 5, -5, 0.1, -5, -5, -0.1, 5, 5, -0.1, 5, 5, -0.1, -5, 5, 0.1, 5, 5, -0.1, 5, -5, -0.1, 5, 5, -0.1, -5, 5, -0.1, 5, 5, 0.1, 5, 5, -0.1, -5, 5, 0.1, -5, -5, 0.1, -5, -5, 0.1, -5, 5, 0.1, -5, 5, 0.1, 5, 5, 0.1, 5, 5, 0.1, -5, 5, -0.1, -5)
 
 [node name="Test" type="Node3D"]
@@ -42,10 +43,12 @@ directional_shadow_max_distance = 10.0
 [node name="floor" type="StaticBody3D" parent="."]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="floor"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
 size = Vector3(10, 0.2, 10)
 
-[node name="CSGBakedCollisionShape3D" type="CollisionShape3D" parent="floor"]
-shape = SubResource("ConcavePolygonShape3D_ij1v8")
+[node name="CSGBakedCollisionShape3D2" type="CollisionShape3D" parent="floor"]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_44saj")
 
 [node name="Player" parent="." instance=ExtResource("1_errlg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.43253338, 0.10284007, -0.048513412)
@@ -105,3 +108,6 @@ default_animation = "stationary_idle"
 [node name="agent" parent="." instance=ExtResource("12_7yos8")]
 transform = Transform3D(-0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, -0.70710677, -1.1716571, 0.17219543, 3.5011144)
 look_at_player = true
+
+[node name="DoubleDoor" parent="." instance=ExtResource("13_44saj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5, 0, 0)
