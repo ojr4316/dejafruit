@@ -1,5 +1,7 @@
 class_name Door extends Interactive
 
+@export var locked := false
+
 signal opened
 signal closed
 

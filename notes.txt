@@ -27,3 +27,4 @@ DEJA FRUIT
 24. Slippery floor
 25. Recently knocked down random food
 26. Everyone is dead on the ground
+27. Infinite money from ATM

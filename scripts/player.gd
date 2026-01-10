@@ -29,6 +29,13 @@ func _physics_process(delta: float) -> void:
 	
 	var dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var move := dir.x*global_transform.basis.x+dir.y*global_transform.basis.z
+	
+	# Change directions faster
+	if (move.x > 0 and velocity.x < 0) or (move.x < 0 and velocity.x > 0):
+		velocity.x = 0
+	if (move.z > 0 and velocity.z < 0) or (move.z < 0 and velocity.z > 0):
+		velocity.z = 0
+	
 	if dir.x > 0:
 		velocity.x = move_toward(velocity.x, move.x * move_speed, delta * move_acc)
 	else:
