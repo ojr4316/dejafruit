@@ -1,10 +1,17 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkrylb20v7wf"]
+[gd_scene load_steps=17 format=3 uid="uid://dkrylb20v7wf"]
 
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="PackedScene" uid="uid://bt7bgrk3re2un" path="res://scenes/dynamic/door.tscn" id="2_bl13t"]
 [ext_resource type="PackedScene" uid="uid://dtm5iphhdiec4" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
 [ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
 [ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://cl71lgxvj2k2l" path="res://scenes/prefabs/GangWarfareCharacters/asian_gangster.tscn" id="6_lpvoh"]
+[ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="7_at5dv"]
+[ext_resource type="PackedScene" uid="uid://ea2m70vvc33o" path="res://scenes/prefabs/GangWarfareCharacters/gangm.tscn" id="8_ghpyy"]
+[ext_resource type="PackedScene" uid="uid://davu83r24owev" path="res://scenes/prefabs/GangWarfareCharacters/plain.tscn" id="9_44saj"]
+[ext_resource type="PackedScene" uid="uid://c23thoxfh56i1" path="res://scenes/prefabs/GangWarfareCharacters/gangboss.tscn" id="10_7mbro"]
+[ext_resource type="PackedScene" uid="uid://b7uqaf4carqxq" path="res://scenes/prefabs/GangWarfareCharacters/agent_female.tscn" id="11_ff6ho"]
+[ext_resource type="PackedScene" uid="uid://bwaw0d4a3amqm" path="res://scenes/prefabs/GangWarfareCharacters/agent_male.tscn" id="12_7yos8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lpvoh"]
 sky_top_color = Color(0.49047506, 0.5369292, 0.707911, 1)
@@ -66,3 +73,35 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0
 
 [node name="AutoDoor" parent="." instance=ExtResource("5_j5jx5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 5)
+
+[node name="AsianGangster" parent="." instance=ExtResource("6_lpvoh")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.6142855, 0.102979876, 1.5715973)
+look_at_player = true
+
+[node name="cook" parent="." instance=ExtResource("7_at5dv")]
+transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, -4.316605, 0.16329604, -1.3010211)
+look_at_player = true
+default_animation = "milk"
+
+[node name="gangm" parent="." instance=ExtResource("8_ghpyy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.594162, 0.17219567, -1.8601968)
+look_at_player = true
+
+[node name="plain" parent="." instance=ExtResource("9_44saj")]
+transform = Transform3D(-0.25881904, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881904, 3.5390062, 0.17219567, 4.1883974)
+look_at_player = true
+default_animation = "pick_fruit"
+
+[node name="gangboss" parent="." instance=ExtResource("10_7mbro")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.0851765, 0.17219591, 1.1157093)
+look_at_player = true
+default_animation = "walk"
+
+[node name="agentf" parent="." instance=ExtResource("11_ff6ho")]
+transform = Transform3D(-0.25881904, 0, -0.9659258, 0, 1, 0, 0.9659258, 0, -0.25881904, 0.4295249, 0.17219567, 2.2998433)
+look_at_player = true
+default_animation = "stationary_idle"
+
+[node name="agent" parent="." instance=ExtResource("12_7yos8")]
+transform = Transform3D(-0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, -0.70710677, -1.1716571, 0.17219543, 3.5011144)
+look_at_player = true
