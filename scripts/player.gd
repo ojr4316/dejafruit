@@ -13,8 +13,8 @@ class_name Player extends CharacterBody3D
 
 @export var default_move_speed := 3.0
 @onready var move_speed := default_move_speed
-@export var move_acc := 2.0
-@export var move_dec := 10.0
+@export var move_acc := 8.0
+@export var move_dec := 20.0
 
 @export var mouse_sensitivity := 0.01
 @export var tilt_limit = deg_to_rad(75)
