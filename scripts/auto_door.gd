@@ -5,6 +5,14 @@ class_name AutoDoor extends Node3D
 
 var active_tween: Tween = null
 
+var both_x: Vector2:
+	get:
+		return Vector2(left_body.position.x, right_body.position.x)
+	set(value):
+		if active_tween: active_tween.stop()
+		left_body.position.x = value.x
+		right_body.position.x = value.y
+
 func toggle(open: bool) -> void:
 	if active_tween:
 		active_tween.stop()
@@ -19,7 +27,8 @@ func toggle(open: bool) -> void:
 	else:
 		active_tween.tween_property(left_body, "position:x", 0, 2).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
 		active_tween.tween_property(right_body, "position:x", 1, 2).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
-	
+
+
 	
 func _on_body_entered(body: Node3D) -> void:
 	if body is Player:
