@@ -12,4 +12,5 @@ func _body_entered(body: Node3D) -> void:
 func transition(player: Player) -> void:
 	var relative := player.global_position - global_position
 	player.global_position = destination.global_position + relative
+	AnomalyManager.start_random()
 	

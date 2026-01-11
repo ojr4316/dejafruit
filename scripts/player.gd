@@ -8,7 +8,7 @@ class_name Player extends CharacterBody3D
 @onready var camera: Camera3D = $Camera3D
 @onready var mesh_root: Node3D = $Root
 
-@export var jump_strength := 3.5
+@export var jump_strength := 2.2
 @export var gravity := 10
 
 @export var default_move_speed := 3.0
@@ -47,8 +47,7 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		velocity.y = 0
 		if Input.is_action_just_pressed("jump"):
-			#velocity.y += jump_strength
-			AnomalyManager.start_random()
+			velocity.y += jump_strength
 	else:
 		velocity.y -= gravity * delta
 		
