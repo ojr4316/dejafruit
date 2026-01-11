@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://nw7y3dmvhmhm"]
+[gd_scene load_steps=10 format=4 uid="uid://nw7y3dmvhmhm"]
 
 [ext_resource type="Script" uid="uid://b1pom4cf0jyrw" path="res://scripts/loop_tomato.gd" id="1_a07xd"]
 [ext_resource type="Texture2D" uid="uid://g1ujho6x4kfh" path="res://assets/models/tomato_Sphere Base Color.png" id="2_a07xd"]
 [ext_resource type="Script" uid="uid://b5agh766vg070" path="res://scripts/interactable_area.gd" id="2_ixer7"]
+[ext_resource type="AudioStream" uid="uid://gqkphpqs2dcf" path="res://assets/sounds/inventory_sound_effects/cloth-inventory.wav" id="4_xc2q4"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v58ht"]
 resource_name = "Material.001"
@@ -74,5 +75,10 @@ interactable = NodePath("..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionArea"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.063588396, 0)
 shape = SubResource("SphereShape3D_a07xd")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_xc2q4")
+volume_db = -2.0
+pitch_scale = 1.3
 
 [connection signal="interaction_ended" from="InteractionArea" to="." method="_on_interaction_area_interaction_ended"]
