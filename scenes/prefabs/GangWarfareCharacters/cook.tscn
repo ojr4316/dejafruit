@@ -404,7 +404,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8541753, 0)
 shape = SubResource("CapsuleShape3D_s4ff0")
 
 [node name="Root" type="Node3D" parent="."]
-transform = Transform3D(0.99861944, 0.02417831, 0.04663369, -0.023372333, 0.9995692, -0.017751731, -0.047042813, 0.016637284, 0.9987542, -0.01959368, -0.012373733, 0.0014627337)
+transform = Transform3D(0.99861944, 0.024178287, 0.04663369, -0.023372311, 0.9995692, -0.017751731, -0.047042813, 0.016637286, 0.9987542, -0.01959368, -0.012373733, 0.0014627337)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Root"]
 bones/0/name = "Pelvis"

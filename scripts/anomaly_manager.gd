@@ -3,7 +3,7 @@ extends Node
 
 const WIN = preload("uid://1oeiarh1e408")
 
-const ANOMALY_CHANCE = 1.0#0.6
+const ANOMALY_CHANCE = 0.6
 
 var anomalies: Array[AnomalyEvent]
 var current_anomaly: AnomalyEvent
@@ -40,7 +40,7 @@ func start_random():
 		get_tree().get_first_node_in_group("clock").set_percent_open_to_close(progress/8.0)
 
 	# Check win
-	if progress > 1:# win_state:
+	if progress > win_state:
 		get_tree().call_deferred("change_scene_to_packed", WIN)
 		return
 

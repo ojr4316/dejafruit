@@ -52,8 +52,6 @@ func wet_floor_perform():
 func box_perform():
 	pass # add
 	
-# 15. Cashier missing face
-
 
 # 16. Customer service missing
 # 17. Fruit is meat

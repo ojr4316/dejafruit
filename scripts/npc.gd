@@ -16,6 +16,8 @@ class_name NPC extends CharacterBody3D
 @export var run_speed := 3.2
 @export var walking := true
 
+var dead := false
+
 func _ready():
 	add_to_group("npc")
 	if look_at_player:
@@ -24,6 +26,14 @@ func _ready():
 	
 	if static_pathing != null:
 		play("walk")
+
+func die():
+	play("death")
+	dead = true
+
+func revive():
+	play()
+	dead = false
 
 func play(anim=default_animation):
 	ap.play("NPC_animations/" + anim)
@@ -37,7 +47,7 @@ func _on_check_vision_timeout() -> void:
 			look_at_mod.target_node = ""
 			
 func _physics_process(delta: float) -> void:
-	if static_pathing != null:
+	if static_pathing != null and not dead:
 		static_pathing.progress += delta
 
 func reset_look_at_player():
@@ -48,11 +58,9 @@ func disable_face():
 	var normal: MeshInstance3D = $Root/Skeleton3D/SK_Chr_Cook_Male_01
 	faceless.visible = true
 	normal.visible = false
-	print("disabled?")
 
 func enable_face():
 	var faceless: MeshInstance3D = $Root/Skeleton3D/faceless
 	var normal: MeshInstance3D = $Root/Skeleton3D/SK_Chr_Cook_Male_01
 	faceless.visible = false
 	normal.visible = true
-	print("enabled")

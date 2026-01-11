@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 AnomalyManager="*res://scripts/anomaly_manager.gd"
 
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+
 [dotnet]
 
 project/assembly_name="dejafruit"
@@ -37,6 +42,7 @@ special_fruit=""
 checkout=""
 clock=""
 faceless=""
+player=""
 
 [input]
 

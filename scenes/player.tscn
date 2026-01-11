@@ -594,7 +594,7 @@ size = Vector3(0.7, 0.5, 1)
 [sub_resource type="SphereShape3D" id="SphereShape3D_g2els"]
 radius = 2.5
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 wall_min_slide_angle = 0.7853982
 floor_max_angle = 1.0471976
 script = ExtResource("1_g2els")
