@@ -42,3 +42,15 @@ func _physics_process(delta: float) -> void:
 
 func reset_look_at_player():
 	look_at_player = init_look_at_player
+	
+func disable_face():
+	var faceless: MeshInstance3D = $Root/Skeleton3D/faceless
+	var normal: MeshInstance3D = $Root/Skeleton3D/SK_Chr_Cook_Male_01
+	faceless.visible = true
+	normal.visible = false
+
+func enable_face():
+	var faceless: MeshInstance3D = $Root/Skeleton3D/faceless
+	var normal: MeshInstance3D = $Root/Skeleton3D/SK_Chr_Cook_Male_01
+	faceless.visible = false
+	normal.visible = true

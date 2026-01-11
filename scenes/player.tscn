@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://g1ujho6x4kfh" path="res://assets/models/tomato_Sphere Base Color.png" id="6_fjrip"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
-radius = 0.34814453
-height = 1.7856445
+radius = 0.3
+height = 1.75
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g2els"]
 resource_name = "SK_Chr_Cook_Male_01"
@@ -595,8 +595,7 @@ radius = 2.5
 
 [node name="Player" type="CharacterBody3D"]
 wall_min_slide_angle = 0.7853982
-floor_max_angle = 1.3089969
-floor_snap_length = 0.15
+floor_max_angle = 1.0471976
 script = ExtResource("1_g2els")
 
 [node name="UI" type="CanvasLayer" parent="."]

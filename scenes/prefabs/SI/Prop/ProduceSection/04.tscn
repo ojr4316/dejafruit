@@ -128,12 +128,12 @@ mesh = SubResource("ArrayMesh_yj5h7")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Default/SI_Prop_ProduceSection_04_col"]
 shape = SubResource("ConvexPolygonShape3D_7crcf")
 
-[node name="SI_Prop_ProduceSection_04" type="MeshInstance3D" parent="."]
+[node name="Rotten" type="MeshInstance3D" parent="."]
 transform = Transform3D(50, 0, 0, 0, 50, 3.7748946e-06, 0, -3.7748946e-06, 50, 0, 0, 0)
 mesh = SubResource("ArrayMesh_2sv0b")
 skeleton = NodePath("")
 
-[node name="GPUParticles3D" type="GPUParticles3D" parent="SI_Prop_ProduceSection_04"]
+[node name="GPUParticles3D" type="GPUParticles3D" parent="Rotten"]
 transform = Transform3D(1, 0, 0, 0, 0.86602503, -0.4999999, 0, 0.4999999, 0.86602503, 0.019575605, 0.01584003, -0.012455336)
 amount = 12
 lifetime = 2.5
