@@ -23,6 +23,11 @@ project/assembly_name="dejafruit"
 
 enabled=PackedStringArray("res://addons/fbx_batch_importer/plugin.cfg")
 
+[global_group]
+
+light=""
+price_tag=""
+
 [input]
 
 jump={

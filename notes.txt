@@ -1,7 +1,9 @@
 DEJA FRUIT
 
+objects(lights, fruit(add,change), npcs, sounds, pricetag, player, atm/money)
+
 **Anomalies**
-1. Lights flicker out
+1. Lights flicker out 
 2. Fruit begins endlessly duplicating
 3. All other shoppers are starring at you
 4. Fruit is rotten

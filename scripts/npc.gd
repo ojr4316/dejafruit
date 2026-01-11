@@ -1,7 +1,9 @@
 class_name NPC extends CharacterBody3D
 
 @export var look_at_player := false
+@onready var init_look_at_player := look_at_player
 @export var default_animation := "idle"
+@onready var init_animation := default_animation
 
 @onready var ap: AnimationPlayer = $AnimationPlayer
 @onready var vision: Area3D = $Vision
@@ -16,6 +18,7 @@ var static_pathing: PathFollow3D
 @export var walking := true
 
 func _ready():
+	add_to_group("npc")
 	if look_at_player:
 		check_vision.start()
 	play()
@@ -39,3 +42,6 @@ func _on_check_vision_timeout() -> void:
 func _physics_process(delta: float) -> void:
 	if static_pathing != null:
 		static_pathing.progress += delta
+
+func reset_look_at_player():
+	look_at_player = init_look_at_player

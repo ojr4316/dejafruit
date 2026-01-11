@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://be78davrytk4r"]
+[gd_scene load_steps=7 format=4 uid="uid://be78davrytk4r"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_pf0tp"]
+[ext_resource type="PackedScene" uid="uid://bgxsj1d7bird8" path="res://scenes/prefabs/price_tag.tscn" id="2_dp00q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pf0tp"]
 resource_name = "lambert352"
@@ -54,3 +55,43 @@ mesh = SubResource("ArrayMesh_y1gg8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Prop_Shelf_Freezer_Preset_02/SI_Prop_Shelf_Freezer_Preset_02_col"]
 shape = SubResource("ConvexPolygonShape3D_a88ya")
+
+[node name="price_tag" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.009630749, 0.017347602, -0.0013455594)
+default_price = 0.99
+
+[node name="price_tag2" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.023130579, 0.017347602, -0.0013455594)
+default_price = 2.99
+
+[node name="price_tag3" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.04135761, 0.017347602, -0.0013455594)
+default_price = 2.29
+
+[node name="price_tag4" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.058006734, 0.017347602, -0.0013657021)
+default_price = 2.19
+
+[node name="price_tag5" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.01483481, 0.0022199892, 0, -0.0022199892, 0.01483481, 0.06665705, 0.017265242, -0.0013712236)
+default_price = 1.99
+
+[node name="price_tag6" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.06108155, 0.029359924, -0.0013858175)
+default_price = 5.99
+
+[node name="price_tag7" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.045549016, 0.029359924, -0.0013858175)
+default_price = 2.59
+
+[node name="price_tag8" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.034298964, 0.029359924, -0.0013858175)
+default_price = 5.19
+
+[node name="price_tag9" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.022148637, 0.029359924, -0.0013858175)
+default_price = 3.99
+
+[node name="price_tag10" parent="SI_Prop_Shelf_Freezer_Preset_02" instance=ExtResource("2_dp00q")]
+transform = Transform3D(0.015, 0, 0, 0, 0.014785551, 0.0025273405, 0, -0.0025273405, 0.014785551, 0.008465329, 0.029359924, -0.0013858175)
+default_price = 2.79

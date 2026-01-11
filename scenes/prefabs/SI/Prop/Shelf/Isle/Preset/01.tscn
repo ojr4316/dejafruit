@@ -1,6 +1,8 @@
-[gd_scene load_steps=10 format=4 uid="uid://diakhrjdc2uhu"]
+[gd_scene load_steps=12 format=4 uid="uid://bdxdjeps2ivmk"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_rrddm"]
+[ext_resource type="PackedScene" uid="uid://bgxsj1d7bird8" path="res://scenes/prefabs/price_tag.tscn" id="2_svkwq"]
+[ext_resource type="Script" uid="uid://dcd0tbqyignqe" path="res://scripts/price_tag.gd" id="3_f67ub"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rrddm"]
 resource_name = "lambert357"
@@ -130,3 +132,176 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03654288, 0.0038581344, -0.015833626)
 mesh = SubResource("ArrayMesh_7fvpn")
 skeleton = NodePath("")
+
+[node name="price_tag1" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0.023948137, 0.021469466, -0.015180854)
+script = ExtResource("3_f67ub")
+default_price = 7.99
+
+[node name="price_tag2" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0.0074450076, 0.021469466, -0.015180854)
+script = ExtResource("3_f67ub")
+
+[node name="price_tag3" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, -0.0057283062, 0.021469466, -0.015180854)
+script = ExtResource("3_f67ub")
+default_price = 2.29
+
+[node name="price_tag4" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, -0.017910887, 0.021469466, -0.015180854)
+script = ExtResource("3_f67ub")
+default_price = 4.39
+
+[node name="price_tag5" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0.023101654, 0.011104441, -0.015216801)
+script = ExtResource("3_f67ub")
+default_price = 9.99
+
+[node name="price_tag6" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, -0.0011706166, 0.011104441, -0.015216801)
+script = ExtResource("3_f67ub")
+default_price = 1.69
+
+[node name="price_tag7" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, -0.012477087, 0.011104441, -0.015216801)
+script = ExtResource("3_f67ub")
+default_price = 3.99
+
+[node name="price_tag8" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0.025854941, 0.00064754277, -0.017327165)
+script = ExtResource("3_f67ub")
+default_price = 1.99
+
+[node name="price_tag9" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0.01718815, 0.00064754277, -0.017327165)
+script = ExtResource("3_f67ub")
+default_price = 1.35
+
+[node name="price_tag10" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0.0036957785, 0.00064754277, -0.017327165)
+script = ExtResource("3_f67ub")
+default_price = 2.99
+
+[node name="price_tag11" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, -0.005803412, 0.00064754277, -0.017327165)
+script = ExtResource("3_f67ub")
+default_price = 1.65
+
+[node name="price_tag12" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, -0.018330816, 0.00064754277, -0.017327165)
+script = ExtResource("3_f67ub")
+default_price = 3.19
+
+[node name="price_tag13" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.03612526, 0.021401705, -0.009966638)
+script = ExtResource("3_f67ub")
+default_price = 8.99
+
+[node name="price_tag14" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.03612526, 0.021401705, -0.0022636447)
+script = ExtResource("3_f67ub")
+default_price = 2.99
+
+[node name="price_tag15" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.03612526, 0.021401705, 0.007516615)
+script = ExtResource("3_f67ub")
+default_price = 3.99
+
+[node name="price_tag16" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.036167108, 0.011130936, -0.007821092)
+script = ExtResource("3_f67ub")
+default_price = 1.99
+
+[node name="price_tag17" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.036167108, 0.011130936, 0.0013277298)
+script = ExtResource("3_f67ub")
+default_price = 1.99
+
+[node name="price_tag18" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.036167108, 0.011130936, 0.010274544)
+script = ExtResource("3_f67ub")
+default_price = 2.49
+
+[node name="price_tag19" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.036813714, 0.00064535835, -0.012224417)
+script = ExtResource("3_f67ub")
+default_price = 2.49
+
+[node name="price_tag20" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.036813714, 0.00064535835, -0.0024058484)
+script = ExtResource("3_f67ub")
+default_price = 2.49
+
+[node name="price_tag21" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(2.8541438e-09, 0.002537404, -0.014783827, -3.872418e-10, 0.014783825, 0.002537403, 0.014999996, -1.0114661e-10, 2.8785172e-09, -0.036813714, 0.00064535835, 0.009028111)
+script = ExtResource("3_f67ub")
+default_price = 1.09
+
+[node name="price_tag22" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.017223889, 0.021433853, 0.015283266)
+script = ExtResource("3_f67ub")
+default_price = 9.99
+
+[node name="price_tag23" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.007277414, 0.021433853, 0.015283266)
+script = ExtResource("3_f67ub")
+
+[node name="price_tag24" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.0019471087, 0.021433853, 0.015283266)
+script = ExtResource("3_f67ub")
+default_price = 3.49
+
+[node name="price_tag25" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.013907123, 0.021433853, 0.015283266)
+script = ExtResource("3_f67ub")
+default_price = 2.99
+
+[node name="price_tag26" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.024984736, 0.021433853, 0.015283266)
+script = ExtResource("3_f67ub")
+default_price = 0.99
+
+[node name="price_tag27" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.019160755, 0.011032445, 0.015283266)
+script = ExtResource("3_f67ub")
+default_price = 1.35
+
+[node name="price_tag28" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.010449704, 0.011109667, 0.015321515)
+script = ExtResource("3_f67ub")
+default_price = 4.0
+
+[node name="price_tag29" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.0012807213, 0.011109667, 0.015321515)
+script = ExtResource("3_f67ub")
+default_price = 3.09
+
+[node name="price_tag30" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.014150467, 0.011109667, 0.015355974)
+script = ExtResource("3_f67ub")
+default_price = 2.19
+
+[node name="price_tag31" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.024150468, 0.011109667, 0.015355974)
+script = ExtResource("3_f67ub")
+default_price = 2.09
+
+[node name="price_tag32" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.016952245, 0.0006586502, 0.017458592)
+script = ExtResource("3_f67ub")
+default_price = 4.59
+
+[node name="price_tag33" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, -0.005519392, 0.0006586502, 0.017458592)
+script = ExtResource("3_f67ub")
+default_price = 2.59
+
+[node name="price_tag34" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.0063348673, 0.0006586502, 0.017458592)
+script = ExtResource("3_f67ub")
+default_price = 2.99
+
+[node name="price_tag35" parent="SI_Prop_Shelf_Isle_Preset_01/SI_Prop_Shelf_Isle_Preset_01_col/SI_Prop_Shelf_Isle_Preset_Pricetags" instance=ExtResource("2_svkwq")]
+transform = Transform3D(0.014999996, -2.1206005e-10, 3.5247387e-09, -3.8724177e-10, 0.014783823, 0.0025374028, -3.5098142e-09, -0.0025374037, 0.014783826, 0.024343468, 0.0006586502, 0.017458592)
+script = ExtResource("3_f67ub")
+default_price = 1.3900000000000001

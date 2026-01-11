@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgxsj1d7bird8"]
+
+[ext_resource type="FontFile" uid="uid://cjy2lgf3i27xo" path="res://assets/fonts/Radley-Regular.ttf" id="1_dkxne"]
+[ext_resource type="Script" uid="uid://dcd0tbqyignqe" path="res://scripts/price_tag.gd" id="2_ins1w"]
+
+[node name="price_tag" type="Label3D" groups=["price_tag"]]
+transform = Transform3D(-0.015, -9.7668e-12, -2.232296e-09, -3.8724188e-10, 0.014783827, 0.0025374042, 2.1984732e-09, 0.0025374042, -0.014783827, 0, 0, 0)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "$"
+font = ExtResource("1_dkxne")
+font_size = 42
+outline_size = 0
+script = ExtResource("2_ins1w")
+
+[node name="dollars" type="Label3D" parent="." groups=["price_tag"]]
+transform = Transform3D(1, -2.1316282e-14, 1.7053026e-13, 3.5527137e-15, 1, 0, -1.4210855e-14, 0, 1, 0.021906853, 0.00530982, 0.0009114742)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "4"
+font = ExtResource("1_dkxne")
+font_size = 42
+outline_size = 0
+
+[node name="cents" type="Label3D" parent="dollars" groups=["price_tag"]]
+transform = Transform3D(1, -1.7763568e-14, 1.2789769e-13, 0, 1, 0, 0, 0, 1, 0.02320528, 0.0031017065, 0.0005326271)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = ".59"
+font = ExtResource("1_dkxne")
+font_size = 24
+outline_size = 0

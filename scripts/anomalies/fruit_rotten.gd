@@ -1,0 +1,11 @@
+extends AnomalyEvent
+
+func perform():
+	var fruits := world.get_tree().get_nodes_in_group("fruit")
+	for fruit in fruits:
+		fruit.rot()
+
+func cleanup():
+	var fruits := world.get_tree().get_nodes_in_group("fruit")
+	for fruit in fruits:
+		fruit.reset()

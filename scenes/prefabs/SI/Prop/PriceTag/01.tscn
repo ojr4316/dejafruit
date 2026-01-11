@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://cfqpd62ubptf"]
+[gd_scene load_steps=8 format=4 uid="uid://cfqpd62ubptf"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_wxn3y"]
+[ext_resource type="FontFile" uid="uid://cjy2lgf3i27xo" path="res://assets/fonts/Radley-Regular.ttf" id="2_8n8wo"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxn3y"]
 resource_name = "lambert288"
@@ -45,6 +46,8 @@ shadow_mesh = SubResource("ArrayMesh_bxy2o")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k0lad"]
 points = PackedVector3Array(0.00092082977, 0, -0.00010152131, 0.00092082977, 0, 0.000101515056, -0.0009208393, 0, 0.000101515056, -0.0009208393, 0, -0.00010152131, 0.00092082977, -0.0018416621, -0.00010152131, 0.00092082977, 0, -0.00010152131, -0.0009208393, 0, -0.00010152131, -0.0009208393, -0.0018416621, -0.00010152131, 0.00092082977, -0.0018416621, 0.000101515056, 0.00092082977, -0.0018416621, -0.00010152131, -0.0009208393, -0.0018416621, -0.00010152131, -0.0009208393, -0.0018416621, 0.000101515056, 0.00092082977, 0, -0.00010152131, 0.00092082977, -0.0018416621, -0.00010152131, 0.00092082977, -0.0018416621, 0.000101515056, 0.00092082977, 0, 0.000101515056, -0.0009208393, 0, 0.000101515056, -0.0009208393, -0.0018416621, 0.000101515056, -0.0009208393, -0.0018416621, -0.00010152131, -0.0009208393, 0, -0.00010152131, 0.0008566952, -0.0017614006, 0.000101515056, 0.00092082977, -0.0018416621, 0.000101515056, -0.0009208393, -0.0018416621, 0.000101515056, 0.00092082977, 0, 0.000101515056, -0.0009208393, 0, 0.000101515056, 0.0008566952, -0.00046393275, 0.000101515056, 0.0008566952, -0.0017614006, 0.000101515056, -0.0008567047, -0.0017614006, 0.000101515056, -0.0008567047, -0.00046393275, 0.000101515056, -0.0008567047, -0.0017614006, 0.000101515056, 0.0008566952, -0.00046393275, 0.000101515056, 0.00092082977, -0.0018416621, 0.000101515056, 0.0008566952, -0.0017614006, 0.000101515056, -0.0008567047, -0.00046393275, 0.000101515056, 0.00092082977, 0, 0.000101515056, 0.0008566952, -0.00046393275, 0.000101515056, -0.0008567047, -0.00046393275, 0.000101515056, -0.0008567047, -0.0017614006, 0.000101515056, -0.0009208393, -0.0018416621, 0.000101515056, -0.0009208393, 0, 0.000101515056)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j3gcn"]
+
 [node name="SI_Prop_PriceTag_01" type="Node3D"]
 
 [node name="SI_Prop_PriceTag_01" type="MeshInstance3D" parent="."]
@@ -56,3 +59,15 @@ mesh = SubResource("ArrayMesh_6f88b")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Prop_PriceTag_01/SI_Prop_PriceTag_01_col"]
 shape = SubResource("ConvexPolygonShape3D_k0lad")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04725667, -0.0068311095)
+size = Vector3(0.07, 0.06, 0.001)
+material = SubResource("StandardMaterial3D_j3gcn")
+
+[node name="Label3D" type="Label3D" parent="CSGBox3D" groups=["price_tag"]]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.0010576397, -0.00063157827)
+pixel_size = 0.0007
+text = "$2.99"
+font = ExtResource("2_8n8wo")
+outline_size = 4

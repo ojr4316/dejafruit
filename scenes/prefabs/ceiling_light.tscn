@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=4 uid="uid://b2xwpyalw0xn1"]
+[gd_scene load_steps=6 format=4 uid="uid://b2xwpyalw0xn1"]
 
+[ext_resource type="Script" uid="uid://dy2287w6patmg" path="res://scripts/light.gd" id="1_caxsi"]
 [ext_resource type="Material" uid="uid://djowbstyfdmva" path="res://assets/materials/space_interiors.tres" id="1_tjbug"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_f71wu"]
@@ -40,7 +41,8 @@ emission_enabled = true
 emission = Color(1, 0.99215686, 0.7137255, 1)
 emission_energy_multiplier = 10.0
 
-[node name="CeilingLight" type="Node3D"]
+[node name="CeilingLight" type="Node3D" groups=["light"]]
+script = ExtResource("1_caxsi")
 
 [node name="SM_Env_Ceiling_Light_02" type="MeshInstance3D" parent="."]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
