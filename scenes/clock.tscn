@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc1ml5ln142nl"]
+
+[ext_resource type="PackedScene" uid="uid://ciygpgya0thv2" path="res://assets/models/clock.glb" id="1_vlc7k"]
+[ext_resource type="Script" uid="uid://dvbdvaywjslwb" path="res://scripts/clock.gd" id="1_y58p0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y58p0"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="Clock" type="Node3D"]
+script = ExtResource("1_y58p0")
+
+[node name="model" parent="." instance=ExtResource("1_vlc7k")]
+
+[node name="Hours" type="Marker3D" parent="model"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="model/Hours"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000113233924, 0.04630877, 0.0033975607)
+size = Vector3(0.0087890625, 0.096343994, 0.001)
+material = SubResource("StandardMaterial3D_y58p0")
+
+[node name="Minutes" type="Marker3D" parent="model"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="model/Minutes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000113233924, 0.06497027, 0.0033975607)
+size = Vector3(0.0087890625, 0.13366699, 0.001)
+material = SubResource("StandardMaterial3D_y58p0")
