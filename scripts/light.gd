@@ -13,6 +13,7 @@ func start_flicker():
 	flicker_timer.wait_time = 0.15
 	flicker_timer.timeout.connect(flicker)
 	add_child(flicker_timer)
+	flicker_timer.start()
 	
 func end_flicker():
 	flicker_timer.queue_free()
