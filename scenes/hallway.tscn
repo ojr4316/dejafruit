@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://d4fc20mkenvf2"]
+[gd_scene load_steps=14 format=3 uid="uid://d4fc20mkenvf2"]
 
 [ext_resource type="PackedScene" uid="uid://dhcij4rh3ykna" path="res://scenes/prefabs/SI/Env/Floor/02.tscn" id="1_txc3n"]
+[ext_resource type="Script" uid="uid://bkuucjigm3dby" path="res://scripts/hallway.gd" id="1_w57m6"]
 [ext_resource type="PackedScene" uid="uid://cn2kq1xlh0ffe" path="res://scenes/prefabs/SI/Env/Wall/CornerBlock/large.tscn" id="2_yjeik"]
 [ext_resource type="PackedScene" uid="uid://dtm5iphhdiec4" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_nlnob"]
 [ext_resource type="PackedScene" uid="uid://c4ib25w5bpeyx" path="res://scenes/prefabs/SI/Env/Wall/Door/Largel/01.tscn" id="4_w57m6"]
@@ -15,9 +16,17 @@ metallic = 0.5
 
 [sub_resource type="BoxMesh" id="BoxMesh_nlnob"]
 material = SubResource("StandardMaterial3D_yjeik")
-size = Vector3(48, 0.2, 6)
+size = Vector3(45, 0.2, 5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grmox"]
+albedo_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_w57m6"]
+material = SubResource("StandardMaterial3D_grmox")
+size = Vector3(5, 0.2, 2.4)
 
 [node name="hallway" type="Node3D"]
+script = ExtResource("1_w57m6")
 
 [node name="SI_Env_Floor_34" parent="." instance=ExtResource("1_txc3n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, -10)
@@ -371,7 +380,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 27.5
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17.5, 0, -11.270059)
 
 [node name="ceiling" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.7307253, 2.2967362, -10.456515)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.297, -10.017622)
 mesh = SubResource("BoxMesh_nlnob")
 skeleton = NodePath("")
 
@@ -389,3 +398,35 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12.6
 
 [node name="CeilingLight5" parent="." instance=ExtResource("8_nlnob")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 20.610939, 2.2141285, -9.974542)
+
+[node name="CeilingLight24" parent="." instance=ExtResource("8_nlnob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.959006, 2.226462, -6.3696713)
+
+[node name="SI_Env_Wall_22" parent="." instance=ExtResource("3_nlnob")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -6.5, 0, -7.5)
+
+[node name="SI_Env_Wall_23" parent="." instance=ExtResource("3_nlnob")]
+transform = Transform3D(-2.1855692e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855692e-07, -11, 0, -5)
+
+[node name="ceiling_small" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.726824, 2.17487, -6.2237945)
+mesh = SubResource("BoxMesh_w57m6")
+skeleton = NodePath("")
+
+[node name="SI_Env_Wall_24" parent="." instance=ExtResource("3_nlnob")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -7.5, 0, -7.5)
+
+[node name="SI_Env_Wall_25" parent="." instance=ExtResource("3_nlnob")]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -12.5, 0, -7.5)
+
+[node name="SI_Env_Wall_Door_Largel_05" parent="." instance=ExtResource("4_w57m6")]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -10, 0, -7.5)
+
+[node name="SI_Env_Floor_31" parent="." instance=ExtResource("1_txc3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -7.5)
+
+[node name="SI_Env_Floor_32" parent="." instance=ExtResource("1_txc3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5, 0, -7.5)
+
+[node name="SI_Env_Floor_33" parent="." instance=ExtResource("1_txc3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, -7.5)
