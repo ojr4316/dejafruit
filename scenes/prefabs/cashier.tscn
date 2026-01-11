@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://x4rdttm132a3"]
+
+[ext_resource type="Script" uid="uid://ce4jib1nrt6ao" path="res://scripts/cashier.gd" id="1_sxlur"]
+[ext_resource type="Script" uid="uid://b5agh766vg070" path="res://scripts/interactable_area.gd" id="3_32vw6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_525ab"]
+size = Vector3(0.8, 1.8, 0.8)
+
+[node name="Cashier" type="Node3D" groups=["checkout"]]
+script = ExtResource("1_sxlur")
+
+[node name="InteractionArea" type="Area3D" parent="." node_paths=PackedStringArray("interactable")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+script = ExtResource("3_32vw6")
+interactable = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionArea"]
+shape = SubResource("BoxShape3D_525ab")
+debug_color = Color(0, 0, 0, 0.41960785)
+
+[connection signal="interaction_ended" from="InteractionArea" to="." method="_on_interaction_area_interaction_ended"]

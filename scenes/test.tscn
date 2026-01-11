@@ -1,10 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://dkrylb20v7wf"]
+[gd_scene load_steps=20 format=3 uid="uid://dkrylb20v7wf"]
 
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="1_errlg"]
 [ext_resource type="PackedScene" uid="uid://bt7bgrk3re2un" path="res://scenes/dynamic/door.tscn" id="2_bl13t"]
 [ext_resource type="PackedScene" uid="uid://dtm5iphhdiec4" path="res://scenes/prefabs/SI/Env/Wall/01.tscn" id="3_74lek"]
 [ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="4_j5jx5"]
-[ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
+[ext_resource type="PackedScene" uid="uid://cul0ey4odfq6g" path="res://scenes/dynamic/auto_door.tscn" id="5_j5jx5"]
 [ext_resource type="PackedScene" uid="uid://cl71lgxvj2k2l" path="res://scenes/prefabs/GangWarfareCharacters/asian_gangster.tscn" id="6_lpvoh"]
 [ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="7_at5dv"]
 [ext_resource type="PackedScene" uid="uid://ea2m70vvc33o" path="res://scenes/prefabs/GangWarfareCharacters/gangm.tscn" id="8_ghpyy"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://b7uqaf4carqxq" path="res://scenes/prefabs/GangWarfareCharacters/agent_female.tscn" id="11_ff6ho"]
 [ext_resource type="PackedScene" uid="uid://bwaw0d4a3amqm" path="res://scenes/prefabs/GangWarfareCharacters/agent_male.tscn" id="12_7yos8"]
 [ext_resource type="PackedScene" uid="uid://f5phxulggugn" path="res://scenes/dynamic/double_door.tscn" id="13_44saj"]
+[ext_resource type="PackedScene" uid="uid://cp502l7a3jh4a" path="res://scenes/prefabs/GangWarfareCharacters/cook_female.tscn" id="14_ff6ho"]
+[ext_resource type="PackedScene" uid="uid://x4rdttm132a3" path="res://scenes/prefabs/cashier.tscn" id="15_7yos8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lpvoh"]
 sky_top_color = Color(0.49047506, 0.5369292, 0.707911, 1)
@@ -109,3 +111,8 @@ look_at_player = true
 
 [node name="DoubleDoor" parent="." instance=ExtResource("13_44saj")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5, 0, 0)
+
+[node name="cook_female" parent="." instance=ExtResource("14_ff6ho")]
+transform = Transform3D(-0.9659258, 0, 0.25881913, 0, 1, 0, -0.25881913, 0, -0.9659258, -7.852846, 0.1123734, 9.794258)
+
+[node name="Cashier" parent="cook_female" instance=ExtResource("15_7yos8")]

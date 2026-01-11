@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=4 uid="uid://d4l8fmdcixnaq"]
+[gd_scene load_steps=15 format=4 uid="uid://d4l8fmdcixnaq"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_c8jjw"]
+[ext_resource type="Script" uid="uid://ce885ol2j4gfs" path="res://scripts/fruit.gd" id="1_kdur6"]
 [ext_resource type="Texture2D" uid="uid://du64n74pdxq0l" path="res://scenes/prefabs/customprefabs/SimpleShopInterior_Texture.png" id="2_r0tpn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8jjw"]
@@ -87,21 +88,48 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_bl5fe")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_40q3d"]
-emission_shape_scale = Vector3(0.01, 0.001, 0.01)
+particle_flag_align_y = true
+emission_shape_scale = Vector3(0.02, 0.001, 0.015)
 emission_shape = 3
 emission_box_extents = Vector3(1, 1, 1)
+direction = Vector3(0, 1, 0)
+initial_velocity_min = 0.01
+initial_velocity_max = 0.02
+gravity = Vector3(0, -2.8, 0)
+damping_min = 1.0
+damping_max = 2.0
+hue_variation_min = -2.2351742e-08
+hue_variation_max = 0.49999997
+
+[sub_resource type="Curve" id="Curve_r0tpn"]
+_data = [Vector2(0, 0.29213488), 0.0, 0.0, 0, 0, Vector2(1, 0.7415731), 1.4, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kdur6"]
+transparency = 1
+albedo_color = Color(0, 1, 0, 0.27450982)
+emission_enabled = true
+emission = Color(0, 1, 0, 1)
+emission_energy_multiplier = 0.1
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_r0tpn"]
+material = SubResource("StandardMaterial3D_kdur6")
+size = 0.1
+sections = 3
+section_length = 0.05
+curve = SubResource("Curve_r0tpn")
 
 [node name="SI_Prop_ProduceSection_01" type="Node3D"]
+script = ExtResource("1_kdur6")
 
-[node name="SI_Prop_ProduceSection_01" type="MeshInstance3D" parent="."]
+[node name="Default" type="MeshInstance3D" parent="."]
 transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 0, 0, 0)
-visible = false
 material_override = ExtResource("1_c8jjw")
 mesh = SubResource("ArrayMesh_oocsc")
 
-[node name="SI_Prop_ProduceSection_01_col" type="StaticBody3D" parent="SI_Prop_ProduceSection_01"]
+[node name="SI_Prop_ProduceSection_01_col" type="StaticBody3D" parent="Default"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SI_Prop_ProduceSection_01/SI_Prop_ProduceSection_01_col"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Default/SI_Prop_ProduceSection_01_col"]
 shape = SubResource("ConvexPolygonShape3D_fw7qq")
 
 [node name="Rotten" type="MeshInstance3D" parent="."]
@@ -110,7 +138,8 @@ mesh = SubResource("ArrayMesh_kdur6")
 skeleton = NodePath("")
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="Rotten"]
-transform = Transform3D(1, 0, 0, 0, 0.8660253, -0.49999997, 0, 0.49999997, 0.8660253, 0.019575605, 0.017204423, -0.014245013)
+transform = Transform3D(1, 0, 0, 0, 0.8660251, -0.4999999, 0, 0.4999999, 0.8660251, 0.019575605, 0.01584003, -0.012455336)
 amount = 12
 lifetime = 2.5
 process_material = SubResource("ParticleProcessMaterial_40q3d")
+draw_pass_1 = SubResource("RibbonTrailMesh_r0tpn")

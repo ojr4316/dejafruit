@@ -77,7 +77,7 @@
 [ext_resource type="PackedScene" uid="uid://dcxhttk6we2wr" path="res://scenes/prefabs/SI/Prop/Sign/Organic/01.tscn" id="75_qaasp"]
 [ext_resource type="PackedScene" uid="uid://b3ducsv0wrryv" path="res://scenes/prefabs/SI/Prop/Sign/Bakery/01.tscn" id="76_1v02h"]
 [ext_resource type="PackedScene" uid="uid://bb2g72x8ut75w" path="res://scenes/prefabs/SI/Prop/Sign/Frozen/01.tscn" id="77_1v02h"]
-[ext_resource type="PackedScene" uid="uid://nw7y3dmvhmhm" path="res://scenes/loop_tomato.tscn" id="78_grmox"]
+[ext_resource type="PackedScene" uid="uid://nw7y3dmvhmhm" path="res://scenes/prefabs/loop_tomato.tscn" id="78_grmox"]
 [ext_resource type="PackedScene" uid="uid://2i818mtbni3o" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/02.tscn" id="78_shehe"]
 [ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="79_l137e"]
 [ext_resource type="PackedScene" uid="uid://b7uqaf4carqxq" path="res://scenes/prefabs/GangWarfareCharacters/agent_female.tscn" id="80_n78cu"]

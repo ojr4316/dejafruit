@@ -19,11 +19,14 @@ class_name Player extends CharacterBody3D
 @export var mouse_sensitivity := 0.01
 @export var tilt_limit = deg_to_rad(75)
 
+@onready var hand_tomato: MeshInstance3D = $Camera3D/HandTomato
+
+
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta: float) -> void:
-	
+	hand_tomato.visible = AnomalyManager.has_fruit
 	var dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var move := dir.x*global_transform.basis.x+dir.y*global_transform.basis.z
 	

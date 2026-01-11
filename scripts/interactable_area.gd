@@ -14,14 +14,14 @@ func _ready() -> void:
 	set_process_unhandled_input(false)
 
 func _area_entered(area: Area3D) -> void:
-	if area is InteractorArea:
+	if area is InteractorArea and interactable.enabled:
 		set_process_unhandled_input(true)
 		interactor = area
 		interactor.player.ui.show_interactor(interactable.get_interact_text())
 		
 	
 func _area_exited(area: Area3D) -> void:
-	if area is InteractorArea:
+	if area is InteractorArea and interactable.enabled:
 		set_process_unhandled_input(false)
 		interactor.player.ui.hide_interactor()
 		interactor = null
