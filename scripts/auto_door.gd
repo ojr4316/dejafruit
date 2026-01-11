@@ -3,6 +3,9 @@ class_name AutoDoor extends Node3D
 @onready var left_body: AnimatableBody3D = %LeftBody
 @onready var right_body: AnimatableBody3D = %RightBody
 
+@onready var slide_closed: AudioStreamPlayer3D = $SlideClosed
+@onready var slide_open: AudioStreamPlayer3D = $SlideOpen
+
 var active_tween: Tween = null
 
 var both_x: Vector2:
@@ -22,11 +25,13 @@ func toggle(open: bool) -> void:
 	active_tween.set_parallel()
 	
 	if open:
-		active_tween.tween_property(left_body, "position:x", -1, 1)
-		active_tween.tween_property(right_body, "position:x", 2, 1)
+		slide_open.play()
+		active_tween.tween_property(left_body, "position:x", -1, 2)
+		active_tween.tween_property(right_body, "position:x", 2, 2)
 	else:
-		active_tween.tween_property(left_body, "position:x", 0, 2).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
-		active_tween.tween_property(right_body, "position:x", 1, 2).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BOUNCE)
+		slide_closed.play()
+		active_tween.tween_property(left_body, "position:x", 0, 1.9).set_ease(Tween.EASE_IN)
+		active_tween.tween_property(right_body, "position:x", 1, 1.9).set_ease(Tween.EASE_IN)
 
 
 	

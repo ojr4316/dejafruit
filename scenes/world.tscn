@@ -1372,7 +1372,7 @@ use_model_front = true
 static_pathing = NodePath("..")
 
 [node name="EndTeleportArea" type="Area3D" parent="." node_paths=PackedStringArray("destination")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.269066, 0, -12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.269066, 0, -12)
 script = ExtResource("80_ygn2i")
 destination = NodePath("EndMarker")
 
@@ -1384,7 +1384,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, 2)
 shape = SubResource("BoxShape3D_ygn2i")
 
 [node name="StartTeleportArea" type="Area3D" parent="." node_paths=PackedStringArray("destination")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.179176, 0, -12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.730927, 0, -12)
 script = ExtResource("80_ygn2i")
 destination = NodePath("StartMarker")
 
