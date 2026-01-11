@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://1oeiarh1e408"]
+
+[ext_resource type="PackedScene" uid="uid://d4fc20mkenvf2" path="res://scenes/hallway.tscn" id="1_r4oei"]
+
+[sub_resource type="Environment" id="Environment_826fv"]
+background_energy_multiplier = 0.3
+ambient_light_color = Color(0, 0, 0.078431375, 1)
+ambient_light_energy = 0.3
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Win" type="Node3D"]
+
+[node name="hallway" parent="." instance=ExtResource("1_r4oei")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.37598002, 0, 2.9901667)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -16.534657, 0.7551633, -6.8172693)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_826fv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -479.5
+offset_right = 300.0
+offset_bottom = 479.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_separation = -10
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/bold_font_size = 100
+bbcode_enabled = true
+text = "[b][tornado radius=15.0][rainbow val=0.2 sat=0.6]YOU HAVE ESCAPED![/rainbow][/tornado][/b]"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
