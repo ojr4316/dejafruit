@@ -1,9 +1,10 @@
-[gd_scene load_steps=18 format=4 uid="uid://bgq5cbwclwnkt"]
+[gd_scene load_steps=19 format=4 uid="uid://bgq5cbwclwnkt"]
 
 [ext_resource type="Material" uid="uid://baqhwahrj6o8r" path="res://assets/materials/simple_shop.tres" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://ckur84kiauw6f" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Script" uid="uid://bypfdpblntap6" path="res://scripts/ui.gd" id="2_dqkch"]
 [ext_resource type="Script" uid="uid://c5txf22p2r1eb" path="res://interactor_area.gd" id="2_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://c23wlmeo2v3fc" path="res://scenes/menu.tscn" id="2_smehm"]
 [ext_resource type="Texture2D" uid="uid://rb4x5vxibgr8" path="res://assets/textures/reticle.png" id="3_qlg0r"]
 [ext_resource type="Theme" uid="uid://d2jpdyrrbioyb" path="res://assets/main.tres" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://g1ujho6x4kfh" path="res://assets/models/tomato_Sphere Base Color.png" id="6_fjrip"]
@@ -598,6 +599,8 @@ wall_min_slide_angle = 0.7853982
 floor_max_angle = 1.0471976
 script = ExtResource("1_g2els")
 
+[node name="Menu" parent="." instance=ExtResource("2_smehm")]
+
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("2_dqkch")
 
@@ -1051,6 +1054,7 @@ current = true
 
 [node name="HandTomato" type="MeshInstance3D" parent="Camera3D"]
 transform = Transform3D(0.59416085, 0.06596805, 0, -0.083503865, 0.46938705, 0, 0, 0, 0.6, 0.315, -0.345, -0.345)
+visible = false
 mesh = SubResource("ArrayMesh_smehm")
 skeleton = NodePath("")
 

@@ -20,12 +20,13 @@ class_name Player extends CharacterBody3D
 @export var tilt_limit = deg_to_rad(75)
 
 @onready var hand_tomato: MeshInstance3D = $Camera3D/HandTomato
-
+@onready var menu: Menu = $Menu
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta: float) -> void:
+	if menu.visible: return
 	hand_tomato.visible = AnomalyManager.has_fruit
 	var dir := Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var move := dir.x*global_transform.basis.x+dir.y*global_transform.basis.z
@@ -57,6 +58,10 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _unhandled_input(event: InputEvent) -> void:
+	# Game Start, Show menu
+	if event is InputEventKey or event is InputEventMouseButton:
+		menu.visible = false
+	if menu.visible: return
 	
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

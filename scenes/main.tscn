@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bgq5cbwclwnkt" path="res://scenes/player.tscn" id="2_sugp2"]
 
 [sub_resource type="Environment" id="Environment_0wfyh"]
-background_energy_multiplier = 3.38
+background_energy_multiplier = 0.3
 ambient_light_color = Color(0, 0, 0.078431375, 1)
 ambient_light_energy = 0.3
 tonemap_mode = 2
@@ -23,4 +23,4 @@ shadow_enabled = true
 [node name="World" parent="." instance=ExtResource("1_0wfyh")]
 
 [node name="Player" parent="." instance=ExtResource("2_sugp2")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9, 0, -4.80991)
+transform = Transform3D(-0.56010425, 0, -0.82842207, 0, 1, 0, 0.82842207, 0, -0.56010425, -12.181084, 0, -10.848566)

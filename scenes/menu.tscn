@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://c23wlmeo2v3fc"]
+
+[ext_resource type="Script" uid="uid://0i51kryjdrtt" path="res://scripts/menu.gd" id="1_con2f"]
+[ext_resource type="Theme" uid="uid://d2jpdyrrbioyb" path="res://assets/main.tres" id="2_con2f"]
+
+[node name="Menu" type="CanvasLayer"]
+script = ExtResource("1_con2f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.19607843)
+
+[node name="title" type="RichTextLabel" parent="."]
+modulate = Color(0.5529556, 0.55295557, 0.55295557, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -550.0
+offset_top = 28.0
+offset_right = -150.0
+offset_bottom = 158.0
+grow_horizontal = 2
+theme = ExtResource("2_con2f")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 80
+bbcode_enabled = true
+text = "[b][tornado]fruit[rainbow val=0.6 sat=0.1]LOOPS[/rainbow][/tornado][/b]"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="desc" type="RichTextLabel" parent="."]
+modulate = Color(0.5529556, 0.55295557, 0.55295557, 1)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -309.0
+offset_right = 459.0
+offset_bottom = -8.0
+grow_vertical = 0
+theme = ExtResource("2_con2f")
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "In this simple test, you will be navigating a \"grocery store\". Please find and purchase a singular fruit item (tomato) if nothing seems out of the ordinary. However, if any anomalies are present, you must leave [b]immediately[/b] without purchasing anything. "
+fit_content = true
+vertical_alignment = 2
+
+[node name="continue" type="RichTextLabel" parent="."]
+modulate = Color(0.5529556, 0.55295557, 0.55295557, 1)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 737.0
+offset_top = -72.0
+offset_right = 1137.0
+offset_bottom = -22.0
+grow_vertical = 0
+theme = ExtResource("2_con2f")
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[rainbow val=1.0 sat=0.1][wave freq=3.5 amp=25.0]press anything to begin[/wave][/rainbow]"
+fit_content = true
+horizontal_alignment = 2
+vertical_alignment = 2

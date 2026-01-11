@@ -69,7 +69,7 @@
 [ext_resource type="PackedScene" uid="uid://bwnqet0yup0oy" path="res://scenes/prefabs/SI/Env/Wall/03.tscn" id="70_8lgfd"]
 [ext_resource type="PackedScene" uid="uid://di8elgpvxfw4m" path="res://scenes/prefabs/SI/Prop/ButcherCounter/03.tscn" id="70_dyafi"]
 [ext_resource type="PackedScene" uid="uid://bgkv6hmhthyxb" path="res://scenes/prefabs/SI/Env/Wall/04.tscn" id="71_dyafi"]
-[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="71_r5yoc"]
+[ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="71_r5yoc"]
 [ext_resource type="PackedScene" uid="uid://ddmpq73dwbafc" path="res://scenes/prefabs/SI/Prop/Table/02.tscn" id="72_1m1ue"]
 [ext_resource type="PackedScene" uid="uid://dc8c8lq1b81nx" path="res://scenes/prefabs/SI/Prop/Counter/03.tscn" id="72_r5yoc"]
 [ext_resource type="PackedScene" uid="uid://nisadwaylxx7" path="res://scenes/prefabs/SI/Prop/Chair/01.tscn" id="73_ntuqo"]
@@ -610,7 +610,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 17.5)
 
 [node name="ceiling" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-visible = false
 mesh = SubResource("BoxMesh_ggc52")
 skeleton = NodePath("")
 
