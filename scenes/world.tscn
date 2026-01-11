@@ -1,10 +1,9 @@
-[gd_scene load_steps=84 format=3 uid="uid://e0uqpedqtca3"]
+[gd_scene load_steps=83 format=3 uid="uid://e0uqpedqtca3"]
 
 [ext_resource type="PackedScene" uid="uid://dylehg03f13oi" path="res://scenes/prefabs/SI/Env/Floor/01.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://batbokxh1u4kd" path="res://scenes/lights.tscn" id="1_ygn2i"]
 [ext_resource type="PackedScene" uid="uid://cn2kq1xlh0ffe" path="res://scenes/prefabs/SI/Env/Wall/CornerBlock/large.tscn" id="3_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://dhcij4rh3ykna" path="res://scenes/prefabs/SI/Env/Floor/02.tscn" id="4_k0juu"]
-[ext_resource type="PackedScene" uid="uid://cc2qjlls4uun5" path="res://assets/models/GangWarfare/characters/SK_Chr_Cook_Male_01.fbx" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://4gbeelx65cyd" path="res://scenes/prefabs/SI/Env/Wall/Large/01.tscn" id="5_qfnet"]
 [ext_resource type="PackedScene" uid="uid://yyv6sqpt4xso" path="res://scenes/prefabs/SI/Env/Wall/Large/Window/05.tscn" id="6_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://dag5w57qw061q" path="res://scenes/prefabs/SI/Env/Wall/Large/Door/01.tscn" id="6_i7141"]
@@ -265,9 +264,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7.5)
 
 [node name="SI_Env_Floor_55" parent="floors" instance=ExtResource("1_nnsk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 7.5)
-
-[node name="SK_Chr_Cook_Male_01" parent="floors" instance=ExtResource("5_71j4m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7285573, 0.0030309067, 2.279283)
 
 [node name="SI_Env_Floor_56" parent="floors" instance=ExtResource("1_nnsk1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, -2.5)
