@@ -36,7 +36,7 @@
 [ext_resource type="PackedScene" uid="uid://dogvvwawd6ti0" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/03.tscn" id="35_817gm"]
 [ext_resource type="PackedScene" uid="uid://brp3nvk7ycntv" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/01.tscn" id="36_ggc52"]
 [ext_resource type="PackedScene" uid="uid://dfky42kealqmy" path="res://scenes/prefabs/SI/Prop/Mat/01.tscn" id="37_817gm"]
-[ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="38_ggc52"]
+[ext_resource type="PackedScene" uid="uid://cul0ey4odfq6g" path="res://scenes/dynamic/auto_door.tscn" id="38_ggc52"]
 [ext_resource type="PackedScene" uid="uid://bv22dr6qm6n3q" path="res://scenes/prefabs/SI/Prop/CoffeeMachine/01.tscn" id="41_6oujy"]
 [ext_resource type="PackedScene" uid="uid://cu27jky8quac1" path="res://scenes/prefabs/SI/Prop/AlcoholShelf/02.tscn" id="42_rga7q"]
 [ext_resource type="PackedScene" uid="uid://couqw7nowftj2" path="res://scenes/prefabs/SI/Prop/SelfCheckout/01.tscn" id="43_hi6a0"]
@@ -69,7 +69,7 @@
 [ext_resource type="PackedScene" uid="uid://bwnqet0yup0oy" path="res://scenes/prefabs/SI/Env/Wall/03.tscn" id="70_8lgfd"]
 [ext_resource type="PackedScene" uid="uid://di8elgpvxfw4m" path="res://scenes/prefabs/SI/Prop/ButcherCounter/03.tscn" id="70_dyafi"]
 [ext_resource type="PackedScene" uid="uid://bgkv6hmhthyxb" path="res://scenes/prefabs/SI/Env/Wall/04.tscn" id="71_dyafi"]
-[ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="71_r5yoc"]
+[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="71_r5yoc"]
 [ext_resource type="PackedScene" uid="uid://ddmpq73dwbafc" path="res://scenes/prefabs/SI/Prop/Table/02.tscn" id="72_1m1ue"]
 [ext_resource type="PackedScene" uid="uid://dc8c8lq1b81nx" path="res://scenes/prefabs/SI/Prop/Counter/03.tscn" id="72_r5yoc"]
 [ext_resource type="PackedScene" uid="uid://nisadwaylxx7" path="res://scenes/prefabs/SI/Prop/Chair/01.tscn" id="73_ntuqo"]
@@ -80,7 +80,7 @@
 [ext_resource type="PackedScene" uid="uid://2i818mtbni3o" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/02.tscn" id="78_shehe"]
 [ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="79_l137e"]
 [ext_resource type="PackedScene" uid="uid://b7uqaf4carqxq" path="res://scenes/prefabs/GangWarfareCharacters/agent_female.tscn" id="80_n78cu"]
-[ext_resource type="Script" path="res://scripts/teleport_area.gd" id="80_ygn2i"]
+[ext_resource type="Script" uid="uid://c18a4br4cleal" path="res://scripts/teleport_area.gd" id="80_ygn2i"]
 [ext_resource type="PackedScene" uid="uid://c23thoxfh56i1" path="res://scenes/prefabs/GangWarfareCharacters/gangboss.tscn" id="81_kcpaj"]
 [ext_resource type="PackedScene" uid="uid://davu83r24owev" path="res://scenes/prefabs/GangWarfareCharacters/plain.tscn" id="82_kcpaj"]
 [ext_resource type="PackedScene" uid="uid://cl71lgxvj2k2l" path="res://scenes/prefabs/GangWarfareCharacters/asian_gangster.tscn" id="83_c15v2"]
@@ -592,7 +592,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 17.5)
 
 [node name="ceiling" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-visible = false
 mesh = SubResource("BoxMesh_ggc52")
 skeleton = NodePath("")
 
@@ -1042,7 +1041,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -14,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.744991, 0, -4.5)
 
 [node name="SI_Prop_CoffeeMachine_01" parent="props" instance=ExtResource("41_6oujy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.87637, 0.76507914, 0.6879041)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.210367, 0.76507914, 0.52402985)
 
 [node name="SI_Prop_SelfCheckout_01" parent="props" instance=ExtResource("43_hi6a0")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 16, 0, -2)
@@ -1090,7 +1089,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 14.3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.596226, 0, 0.62432635)
 
 [node name="SI_Prop_KitchenCounter_01" parent="props" instance=ExtResource("26_fh13f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.227802, 0, 0.3514433)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.227802, 0, 0.4039551)
 
 [node name="SI_Prop_KitchenCounter_02" parent="props" instance=ExtResource("27_rup4s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0.41736817)
