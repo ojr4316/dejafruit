@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://e0uqpedqtca3"]
+[gd_scene load_steps=99 format=3 uid="uid://e0uqpedqtca3"]
 
 [ext_resource type="Script" uid="uid://c2wpbpu3jimp4" path="res://scripts/world.gd" id="1_grmox"]
 [ext_resource type="PackedScene" uid="uid://dylehg03f13oi" path="res://scenes/prefabs/SI/Env/Floor/01.tscn" id="1_nnsk1"]
@@ -69,7 +69,7 @@
 [ext_resource type="PackedScene" uid="uid://bwnqet0yup0oy" path="res://scenes/prefabs/SI/Env/Wall/03.tscn" id="70_8lgfd"]
 [ext_resource type="PackedScene" uid="uid://di8elgpvxfw4m" path="res://scenes/prefabs/SI/Prop/ButcherCounter/03.tscn" id="70_dyafi"]
 [ext_resource type="PackedScene" uid="uid://bgkv6hmhthyxb" path="res://scenes/prefabs/SI/Env/Wall/04.tscn" id="71_dyafi"]
-[ext_resource type="PackedScene" uid="uid://cxvojg8xadje6" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="71_r5yoc"]
+[ext_resource type="PackedScene" uid="uid://cn853tvlpcxn4" path="res://scenes/prefabs/SI/Env/Wall/Door/Small/01.tscn" id="71_r5yoc"]
 [ext_resource type="PackedScene" uid="uid://ddmpq73dwbafc" path="res://scenes/prefabs/SI/Prop/Table/02.tscn" id="72_1m1ue"]
 [ext_resource type="PackedScene" uid="uid://dc8c8lq1b81nx" path="res://scenes/prefabs/SI/Prop/Counter/03.tscn" id="72_r5yoc"]
 [ext_resource type="PackedScene" uid="uid://nisadwaylxx7" path="res://scenes/prefabs/SI/Prop/Chair/01.tscn" id="73_ntuqo"]
@@ -90,6 +90,9 @@
 [ext_resource type="PackedScene" uid="uid://cc1ml5ln142nl" path="res://scenes/clock.tscn" id="88_kvmu4"]
 [ext_resource type="PackedScene" uid="uid://x4rdttm132a3" path="res://scenes/prefabs/cashier.tscn" id="90_frq1x"]
 [ext_resource type="PackedScene" uid="uid://d3o8eisxxybhs" path="res://assets/models/closingtimesign.glb" id="91_frq1x"]
+[ext_resource type="PackedScene" uid="uid://ceivdmhvqovdp" path="res://scenes/prefabs/SI/Prop/Basket/HandleDown/02.tscn" id="91_mlb8o"]
+[ext_resource type="PackedScene" uid="uid://beyq8nfdurmsh" path="res://scenes/prefabs/SI/Prop/Basket/HandleUp/02.tscn" id="92_ebmc1"]
+[ext_resource type="PackedScene" uid="uid://bykxx48kaxfwv" path="res://scenes/prefabs/SI/Prop/Bench/03.tscn" id="93_ebmc1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygn2i"]
 albedo_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
@@ -1296,10 +1299,10 @@ transform = Transform3D(0.11098322, 0, -0.9938223, 0, 1, 0, 0.9938223, 0, 0.1109
 transform = Transform3D(0.89851844, 0, -0.4389358, 0, 1, 0, 0.4389358, 0, 0.89851844, -5.117292, -7.4505806e-07, 11.014377)
 
 [node name="SI_Prop_ShoppingTrolley_07" parent="props" instance=ExtResource("35_817gm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48737693, 0, 2.1704018)
+transform = Transform3D(0.77492243, 0, 0.63205636, 0, 1, 0, -0.63205636, 0, 0.77492243, -1.0899154, 0, 1.4316692)
 
 [node name="SI_Prop_ShoppingTrolley_08" parent="props" instance=ExtResource("34_x2olw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.714267, 0, 3.4985857)
+transform = Transform3D(0.9724961, 0, -0.23291923, 0, 1, 0, 0.23291923, 0, 0.9724961, -0.006236315, 0, 1.3806311)
 
 [node name="SI_Prop_ShoppingTrolley_09" parent="props" instance=ExtResource("34_x2olw")]
 transform = Transform3D(0.99062425, 0, 0.1366147, 0, 1, 0, -0.1366147, 0, 0.99062425, -15.322624, 1.4901161e-06, 2.451273)
@@ -1393,3 +1396,48 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.52
 
 [node name="closingtimesign" parent="." instance=ExtResource("91_frq1x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.23661, 2.705991, 0.037936714)
+
+[node name="SI_Env_Door_03" parent="." instance=ExtResource("87_kvmu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.763288, 0, 17.485302)
+
+[node name="SI_Env_Door_04" parent="." instance=ExtResource("87_kvmu4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.746176, 0, 17.5)
+
+[node name="SI_Env_Door_05" parent="." instance=ExtResource("87_kvmu4")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.746176, 0, 17.563627)
+
+[node name="SI_Env_Door_06" parent="." instance=ExtResource("87_kvmu4")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17.5, 0, 11.731834)
+
+[node name="SI_Env_Door_07" parent="." instance=ExtResource("87_kvmu4")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -17.581417, 0, 13.728299)
+
+[node name="SI_Prop_Basket_Stack_02" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.234105, 0, -5.256113)
+
+[node name="SI_Prop_Basket_Stack_03" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.299219, 0, -5.2048297)
+
+[node name="SI_Prop_Basket_Stack_04" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2370367, 0, -5.2813044)
+
+[node name="SI_Prop_Basket_Stack_05" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.973568, 0, -2.9547746)
+
+[node name="SI_Prop_Basket_HandleDown_02" parent="." instance=ExtResource("91_mlb8o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.509132, -3.7252903e-07, -2.9820027)
+
+[node name="SI_Prop_Basket_HandleUp_02" parent="." instance=ExtResource("92_ebmc1")]
+transform = Transform3D(0.8535235, 0, 0.5210543, 0, 1, 0, -0.5210543, 0, 0.8535235, 18.873901, 0, -0.99298334)
+
+[node name="SI_Prop_Basket_HandleUp_03" parent="." instance=ExtResource("92_ebmc1")]
+transform = Transform3D(0.9851033, 0, -0.17196348, 0, 1, 0, 0.17196348, 0, 0.9851033, 18.72637, -3.7252903e-07, -4.623602)
+
+[node name="SI_Prop_Bench_03" parent="." instance=ExtResource("93_ebmc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.728365, 0, -7)
+
+[node name="SI_Prop_Bench_04" parent="." instance=ExtResource("93_ebmc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.728311, 0, -7)
+
+[node name="SI_Prop_Bench_05" parent="." instance=ExtResource("93_ebmc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 0, -7)
