@@ -7,10 +7,12 @@ const CLOSING := 20
 @onready var minutes_hand: Marker3D = %Minutes
 
 @export var do_clock_anomaly := false
-
 var counter := 0.0
+
+func _ready():
+	set_percent_open_to_close(0)
+
 func _physics_process(delta: float) -> void:
-	
 	if not do_clock_anomaly: return
 	
 	counter -= delta * 10

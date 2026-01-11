@@ -9,7 +9,10 @@ var current_anomaly: AnomalyEvent
 var world_ref: World
 
 var has_fruit := false
+var did_purchase := false
 var anomaly_present := false
+
+var progress := 0
 
 func _ready():
 	load_anomalies()
@@ -22,10 +25,24 @@ func set_fruit(x: bool):
 func start_random():
 	print("NEW CYCLE!")
 	
+	# Evaluate last
+	if (not anomaly_present and did_purchase) or (not did_purchase and anomaly_present):
+		progress = 0
+		print("MISSED! reset")
+		get_tree().get_first_node_in_group("clock").set_percent_open_to_close(0)
+	else:
+		progress+=1
+		get_tree().get_first_node_in_group("clock").set_percent_open_to_close(progress/8.0)
+
+	# Reset world
 	if current_anomaly != null:
 		current_anomaly.cleanup()
 		current_anomaly = null
+	world_ref.reset()
+	get_tree().get_first_node_in_group("checkout").enabled = false
+	did_purchase = false
 	
+	# New anomaly (or not)
 	if anomalies.size() == 0:
 		print("No anomalies left!")
 		return

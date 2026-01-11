@@ -117,8 +117,9 @@ point_count = 16
 [sub_resource type="BoxShape3D" id="BoxShape3D_ygn2i"]
 size = Vector3(3, 2, 5)
 
-[node name="World" type="Node3D" groups=["world"]]
+[node name="World" type="Node3D" node_paths=PackedStringArray("loop_tomato") groups=["world"]]
 script = ExtResource("1_grmox")
+loop_tomato = NodePath("props/LoopTomato")
 
 [node name="lights" parent="." groups=["world"] instance=ExtResource("1_ygn2i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)

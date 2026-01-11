@@ -6,7 +6,7 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y58p0"]
 albedo_color = Color(0, 0, 0, 1)
 
-[node name="Clock" type="Node3D"]
+[node name="Clock" type="Node3D" groups=["clock"]]
 script = ExtResource("1_y58p0")
 
 [node name="model" parent="." instance=ExtResource("1_vlc7k")]
