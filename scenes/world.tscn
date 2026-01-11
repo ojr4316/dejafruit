@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=3 uid="uid://e0uqpedqtca3"]
+[gd_scene load_steps=108 format=3 uid="uid://e0uqpedqtca3"]
 
 [ext_resource type="Script" uid="uid://c2wpbpu3jimp4" path="res://scripts/world.gd" id="1_grmox"]
 [ext_resource type="PackedScene" uid="uid://dylehg03f13oi" path="res://scenes/prefabs/SI/Env/Floor/01.tscn" id="1_nnsk1"]
@@ -80,6 +80,7 @@
 [ext_resource type="PackedScene" uid="uid://nw7y3dmvhmhm" path="res://scenes/prefabs/loop_tomato.tscn" id="78_grmox"]
 [ext_resource type="PackedScene" uid="uid://2i818mtbni3o" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/02.tscn" id="78_shehe"]
 [ext_resource type="PackedScene" uid="uid://bppn1xs6oyifc" path="res://scenes/prefabs/GangWarfareCharacters/cook.tscn" id="79_l137e"]
+[ext_resource type="PackedScene" uid="uid://xfhq7bhhepum" path="res://scenes/prefabs/SI/Prop/ElectronicRegister/01.tscn" id="79_mu18u"]
 [ext_resource type="PackedScene" uid="uid://b7uqaf4carqxq" path="res://scenes/prefabs/GangWarfareCharacters/agent_female.tscn" id="80_n78cu"]
 [ext_resource type="Script" uid="uid://c18a4br4cleal" path="res://scripts/teleport_area.gd" id="80_ygn2i"]
 [ext_resource type="PackedScene" uid="uid://c23thoxfh56i1" path="res://scenes/prefabs/GangWarfareCharacters/gangboss.tscn" id="81_kcpaj"]
@@ -93,6 +94,14 @@
 [ext_resource type="PackedScene" uid="uid://ceivdmhvqovdp" path="res://scenes/prefabs/SI/Prop/Basket/HandleDown/02.tscn" id="91_mlb8o"]
 [ext_resource type="PackedScene" uid="uid://beyq8nfdurmsh" path="res://scenes/prefabs/SI/Prop/Basket/HandleUp/02.tscn" id="92_ebmc1"]
 [ext_resource type="PackedScene" uid="uid://bykxx48kaxfwv" path="res://scenes/prefabs/SI/Prop/Bench/03.tscn" id="93_ebmc1"]
+[ext_resource type="PackedScene" uid="uid://5r73t78ayjyy" path="res://scenes/prefabs/SI/Prop/Arcade/AirHockey.tscn" id="94_pb8sg"]
+[ext_resource type="PackedScene" uid="uid://6yjoo4fpkhw3" path="res://scenes/prefabs/SI/Prop/Arcade/SkeeballMachine/01.tscn" id="95_ce70q"]
+[ext_resource type="PackedScene" uid="uid://ljprdk8nlxqx" path="res://scenes/prefabs/SI/Prop/Basket/Stack/01.tscn" id="96_odf6h"]
+[ext_resource type="PackedScene" uid="uid://bjnx4en6ayyh0" path="res://scenes/prefabs/SI/Prop/CarboardBox/01.tscn" id="97_mu18u"]
+[ext_resource type="PackedScene" uid="uid://hllff6fhe3el" path="res://scenes/prefabs/SI/Prop/CarboardBox/02.tscn" id="98_7b7y8"]
+[ext_resource type="PackedScene" uid="uid://b0523un0vss3u" path="res://scenes/prefabs/SI/Prop/CarboardBox/03.tscn" id="99_wui3h"]
+[ext_resource type="PackedScene" uid="uid://ctecbk5vxb7pd" path="res://scenes/prefabs/SI/Prop/ConcreteBench/01.tscn" id="101_7b7y8"]
+[ext_resource type="PackedScene" uid="uid://dtsxttmgwgeif" path="res://scenes/prefabs/SI/Prop/IceCreamCounter/01.tscn" id="102_wui3h"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygn2i"]
 albedo_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
@@ -1110,7 +1119,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.227802, 0, 0.4039551)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0.41736817)
 
 [node name="SI_Prop_FireExtinguisher_01" parent="props" instance=ExtResource("51_e68xj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.5, 0, 1)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19.880604, 1, -0.5)
 
 [node name="SI_Prop_Coffee_Kiosk" parent="props" instance=ExtResource("53_qg546")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.592773, 0, 2.5983071)
@@ -1182,10 +1191,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.32446742, 14.5)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.5, 0, 14)
 
 [node name="SI_Prop_Counter_02" parent="props" instance=ExtResource("62_66tox")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -13.5, 0, 11)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -14, 0, 11)
 
 [node name="SI_Prop_Counter_06" parent="props" instance=ExtResource("54_h3odw")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -11.5, 0, 11)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -10.5, 0, 11)
 
 [node name="SI_Prop_Counter_07" parent="props" instance=ExtResource("63_pq8jk")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.337907, 0, 12.152144)
@@ -1316,6 +1325,9 @@ transform = Transform3D(0.85533714, 0, 0.5180718, 0, 1, 0, -0.5180718, 0, 0.8553
 [node name="LoopTomato" parent="props" instance=ExtResource("78_grmox")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.822961, 0.3993312, 2.9093974)
 
+[node name="SI_Prop_ElectronicRegister_01" parent="props" instance=ExtResource("79_mu18u")]
+transform = Transform3D(-0.9659258, 0, -0.25881913, 0, 1, 0, 0.25881913, 0, -0.9659258, -15.36838, 0.7381178, 10.857178)
+
 [node name="AutoDoor" parent="." instance=ExtResource("38_ggc52")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -5)
 
@@ -1441,3 +1453,57 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.728311, 0, -7)
 
 [node name="SI_Prop_Bench_05" parent="." instance=ExtResource("93_ebmc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 0, -7)
+
+[node name="SI_Prop_Cabinet_01" parent="." instance=ExtResource("27_8u370")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.64118, 3.7252903e-07, 0.39326662)
+
+[node name="SI_Prop_AlcoholShelf_02" parent="." instance=ExtResource("42_rga7q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 17.75)
+
+[node name="SI_Prop_Arcade_AirHockey" parent="." instance=ExtResource("94_pb8sg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 21)
+
+[node name="SI_Prop_Arcade_SkeeballMachine_01" parent="." instance=ExtResource("95_ce70q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 21)
+
+[node name="SI_Prop_Basket_Stack_01" parent="." instance=ExtResource("96_odf6h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.110525, 3.7252903e-07, 17.822945)
+
+[node name="SI_Prop_Basket_Stack_06" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.598987, 0, 18.283524)
+
+[node name="SI_Prop_Basket_Stack_07" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.0129156, 3.7252903e-07, 18.293888)
+
+[node name="SI_Prop_Basket_Stack_08" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.492711, -3.7252903e-07, 20.304794)
+
+[node name="SI_Prop_Basket_Stack_09" parent="." instance=ExtResource("10_e3hyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4479523, 0, 20.757845)
+
+[node name="SI_Prop_CarboardBox_01" parent="." instance=ExtResource("97_mu18u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.826215, 0, 20.92852)
+
+[node name="SI_Prop_CarboardBox_02" parent="." instance=ExtResource("98_7b7y8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.665658, 0, 20.17483)
+
+[node name="SI_Prop_CarboardBox_03" parent="." instance=ExtResource("99_wui3h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.905221, 3.7252903e-07, 19.763603)
+
+[node name="SI_Prop_CarboardBox_04" parent="." instance=ExtResource("97_mu18u")]
+transform = Transform3D(4.673206, 0, 0, 0, 3.494332, 0, 0, 0, 2.3022661, -5.8474684, 3.7252903e-07, 21.862022)
+
+[node name="SI_Prop_CarboardBox_06" parent="." instance=ExtResource("97_mu18u")]
+transform = Transform3D(1.5328555, 0, -2.174892, 0, 3.494332, 0, 4.414658, 0, 0.75516504, -7.6206284, 3.7252903e-07, 21.159935)
+
+[node name="SI_Prop_CarboardBox_07" parent="." instance=ExtResource("97_mu18u")]
+transform = Transform3D(-0.10219014, 0, -2.3017156, 0, 3.494332, 0, 4.672088, 0, -0.05034411, -8.516963, 3.7252903e-07, 18.578472)
+
+[node name="SI_Prop_CarboardBox_05" parent="." instance=ExtResource("97_mu18u")]
+transform = Transform3D(4.390316, 0, 0.788856, 0, 3.494332, 0, -1.6012427, 0, 2.1628997, -4.1647844, 3.7252903e-07, 21.09889)
+
+[node name="SI_Prop_ConcreteBench_01" parent="." instance=ExtResource("101_7b7y8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 5.5)
+
+[node name="SI_Prop_IceCreamCounter_01" parent="." instance=ExtResource("102_wui3h")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -13.258599, 1.8626451e-07, 10.809532)
