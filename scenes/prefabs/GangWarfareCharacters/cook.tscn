@@ -396,7 +396,7 @@ _data = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_nre20"]
 size = Vector3(5, 2, 5)
 
-[node name="cook" type="CharacterBody3D" groups=["faceless"]]
+[node name="cook" type="CharacterBody3D"]
 script = ExtResource("1_pgvgp")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -404,7 +404,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8541753, 0)
 shape = SubResource("CapsuleShape3D_s4ff0")
 
 [node name="Root" type="Node3D" parent="."]
-transform = Transform3D(0.99861944, 0.024178315, 0.04663369, -0.02337234, 0.9995692, -0.017751731, -0.047042813, 0.016637284, 0.9987542, -0.01959368, -0.012373733, 0.0014627337)
+transform = Transform3D(0.99861944, 0.02417831, 0.04663369, -0.023372333, 0.9995692, -0.017751731, -0.047042813, 0.016637284, 0.9987542, -0.01959368, -0.012373733, 0.0014627337)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Root"]
 bones/0/name = "Pelvis"
@@ -793,10 +793,6 @@ bones/54/position = Vector3(0, 0, 0)
 bones/54/rotation = Quaternion(1.110223e-16, 0, 0, 1)
 bones/54/scale = Vector3(1, 1, 1)
 
-[node name="SK_Chr_Cook_Male_01" type="MeshInstance3D" parent="Root/Skeleton3D"]
-mesh = SubResource("ArrayMesh_o0k30")
-skin = SubResource("Skin_pgvgp")
-
 [node name="LookAtModifier3D" type="LookAtModifier3D" parent="Root/Skeleton3D"]
 bone_name = "neck_01"
 bone = 4
@@ -809,6 +805,11 @@ primary_limit_angle = 3.1415927
 primary_damp_threshold = 1.0
 secondary_limit_angle = 6.2831855
 secondary_damp_threshold = 1.0
+
+[node name="SK_Chr_Cook_Male_01" type="MeshInstance3D" parent="Root/Skeleton3D"]
+transform = Transform3D(1, 2.0954758e-09, 0, -1.8044375e-09, 1, 0, 0, 1.8626451e-09, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_o0k30")
+skin = SubResource("Skin_pgvgp")
 
 [node name="faceless" type="MeshInstance3D" parent="Root/Skeleton3D"]
 visible = false

@@ -25,8 +25,10 @@ func set_fruit(x: bool):
 func start_random():
 	print("NEW CYCLE!")
 	
+	## If no anomaly, buy. If anomaly, leave
+	
 	# Evaluate last
-	if (not anomaly_present and did_purchase) or (not did_purchase and anomaly_present):
+	if (not anomaly_present and not did_purchase) or (did_purchase and anomaly_present):
 		progress = 0
 		print("MISSED! reset")
 		get_tree().get_first_node_in_group("clock").set_percent_open_to_close(0)
@@ -41,6 +43,7 @@ func start_random():
 	world_ref.reset()
 	get_tree().get_first_node_in_group("checkout").enabled = false
 	did_purchase = false
+	has_fruit = false
 	
 	# New anomaly (or not)
 	if anomalies.size() == 0:

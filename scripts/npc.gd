@@ -48,9 +48,11 @@ func disable_face():
 	var normal: MeshInstance3D = $Root/Skeleton3D/SK_Chr_Cook_Male_01
 	faceless.visible = true
 	normal.visible = false
+	print("disabled?")
 
 func enable_face():
 	var faceless: MeshInstance3D = $Root/Skeleton3D/faceless
 	var normal: MeshInstance3D = $Root/Skeleton3D/SK_Chr_Cook_Male_01
 	faceless.visible = false
 	normal.visible = true
+	print("enabled")
