@@ -30,6 +30,8 @@ func flicker():
 
 func off():
 	lightbox.visible = false
+	omni.light_energy = 0.0
 
 func on():
 	lightbox.visible = true
+	omni.light_energy = 1.0
