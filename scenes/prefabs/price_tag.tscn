@@ -13,7 +13,7 @@ font_size = 42
 outline_size = 0
 script = ExtResource("2_ins1w")
 
-[node name="dollars" type="Label3D" parent="." groups=["price_tag"]]
+[node name="dollars" type="Label3D" parent="."]
 transform = Transform3D(1, -2.1316282e-14, 1.7053026e-13, 3.5527137e-15, 1, 0, -1.4210855e-14, 0, 1, 0.021906853, 0.00530982, 0.0009114742)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)
@@ -22,7 +22,7 @@ font = ExtResource("1_dkxne")
 font_size = 42
 outline_size = 0
 
-[node name="cents" type="Label3D" parent="dollars" groups=["price_tag"]]
+[node name="cents" type="Label3D" parent="dollars"]
 transform = Transform3D(1, -1.7763568e-14, 1.2789769e-13, 0, 1, 0, 0, 0, 1, 0.02320528, 0.0031017065, 0.0005326271)
 pixel_size = 0.001
 modulate = Color(0, 0, 0, 1)

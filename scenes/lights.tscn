@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://batbokxh1u4kd"]
+[gd_scene load_steps=2 format=3 uid="uid://batbokxh1u4kd"]
 
 [ext_resource type="PackedScene" uid="uid://b2xwpyalw0xn1" path="res://scenes/prefabs/ceiling_light.tscn" id="1_2m05r"]
-[ext_resource type="PackedScene" uid="uid://bbtcp38mo7ucl" path="res://scenes/prefabs/wall_light.tscn" id="2_swbwg"]
 
 [node name="lights" type="Node3D"]
 
@@ -35,7 +34,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, 4)
 [node name="CeilingLight10" parent="." instance=ExtResource("1_2m05r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4.5, 4)
 
-[node name="CeilingLight11" parent="." instance=ExtResource("1_2m05r")]
+[node name="CeilingLight11" parent="." groups=["flicker_light"] instance=ExtResource("1_2m05r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, 9)
 
 [node name="CeilingLight12" parent="." instance=ExtResource("1_2m05r")]
@@ -56,11 +55,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 4.5, 9)
 [node name="CeilingLight18" parent="." instance=ExtResource("1_2m05r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.5, 9)
 
-[node name="CeilingLight22" parent="." instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 4.5, 4)
+[node name="CeilingLight13" parent="." instance=ExtResource("1_2m05r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, 14)
 
-[node name="CeilingLight24" parent="." instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 4.5, 9)
+[node name="CeilingLight19" parent="." instance=ExtResource("1_2m05r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 4.5, 14)
 
-[node name="CeilingLight13" parent="." instance=ExtResource("2_swbwg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9019957, 1.9661014, -5.500879)
+[node name="CeilingLight20" parent="." instance=ExtResource("1_2m05r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.5, 14)

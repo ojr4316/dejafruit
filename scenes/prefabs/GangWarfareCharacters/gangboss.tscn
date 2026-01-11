@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://c23thoxfh56i1"]
+[gd_scene load_steps=9 format=4 uid="uid://c23thoxfh56i1"]
 
 [ext_resource type="Script" uid="uid://dg01a5gealg50" path="res://scripts/npc.gd" id="1_7k536"]
 [ext_resource type="Material" path="res://assets/materials/gang_warfare.tres" id="2_s3e4y"]
 [ext_resource type="AnimationLibrary" uid="uid://qarcguwu7xhx" path="res://assets/animations/NPC_animations.res" id="3_m8ygl"]
+[ext_resource type="AudioStream" uid="uid://dfdvwxhvnfv8d" path="res://assets/sounds/footstep_concrete_3.wav" id="4_s3e4y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_s4ff0"]
 radius = 0.3
@@ -607,5 +608,11 @@ wait_time = 0.25
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vision"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 2.5)
 shape = SubResource("BoxShape3D_nre20")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_s3e4y")
+volume_db = -2.0
+max_db = 2.0
+max_distance = 12.0
 
 [connection signal="timeout" from="CheckVision" to="." method="_on_check_vision_timeout"]

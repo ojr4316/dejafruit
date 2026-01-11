@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://b2xwpyalw0xn1"]
+[gd_scene load_steps=7 format=4 uid="uid://b2xwpyalw0xn1"]
 
 [ext_resource type="Script" uid="uid://dy2287w6patmg" path="res://scripts/light.gd" id="1_caxsi"]
 [ext_resource type="Material" uid="uid://djowbstyfdmva" path="res://assets/materials/space_interiors.tres" id="1_tjbug"]
+[ext_resource type="AudioStream" uid="uid://bn7udmby577dg" path="res://assets/sounds/factory-fluorescent-light-buzz-6871.mp3" id="3_1c180"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_f71wu"]
 _surfaces = [{
@@ -71,8 +72,15 @@ material = SubResource("StandardMaterial3D_tjbug")
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3305241, 0)
 light_color = Color(1, 0.99215686, 0.7137255, 1)
-light_energy = 0.45
 shadow_enabled = true
 shadow_bias = 1.0
 omni_range = 10.0
 omni_attenuation = 2.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_1c180")
+volume_db = -4.0
+max_db = 1.0
+autoplay = true
+max_distance = 6.0
+parameters/looping = true

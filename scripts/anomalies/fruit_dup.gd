@@ -1,10 +1,11 @@
-extends AnomalyEvent
+class_name FruitDup extends AnomalyEvent
 
 func perform():
+	print("fruit dup")
 	var special_fruit := world.get_tree().get_first_node_in_group("special_fruit")
 	special_fruit.start_dupe()
 
 func cleanup():
-	var spawned := world.get_tree().get_first_node_in_group("spawned")
-	for s in spawned:
-		s.queue_free()
+	var special_fruit := world.get_tree().get_first_node_in_group("special_fruit")
+	special_fruit.end_dupe()
+	

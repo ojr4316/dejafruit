@@ -11,7 +11,7 @@ func _ready():
 func set_price(price=default_price):
 	var dols = int(price)
 	dollars.text = str(dols)
-	var cen = int(100*(default_price-dols))
+	var cen = int(100*(price-dols))
 	if cen > 10:
 		cen = str(cen)
 	elif cen > 0:

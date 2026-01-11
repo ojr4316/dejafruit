@@ -1,4 +1,4 @@
-extends AnomalyEvent
+class_name FruitRotten extends AnomalyEvent
 
 func perform():
 	var fruits := world.get_tree().get_nodes_in_group("fruit")

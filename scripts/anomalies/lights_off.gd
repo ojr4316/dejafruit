@@ -1,6 +1,7 @@
-extends AnomalyEvent
+class_name LightsOff extends AnomalyEvent
 
 func perform():
+	print("lightsss")
 	var lights := world.get_tree().get_nodes_in_group("light")
 	for light in lights:
 		light.off()

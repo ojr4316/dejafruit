@@ -11,8 +11,7 @@ class_name NPC extends CharacterBody3D
 @onready var check_vision: Timer = $CheckVision
 
 # TODO: dynamic pathing / chase player
-var static_pathing: PathFollow3D
-
+@export var static_pathing: PathFollow3D
 @export var walk_speed := 1.5
 @export var run_speed := 3.2
 @export var walking := true
@@ -23,9 +22,7 @@ func _ready():
 		check_vision.start()
 	play()
 	
-	# Don't hate me I'm right
-	if get_parent() is PathFollow3D:
-		static_pathing = get_parent()
+	if static_pathing != null:
 		play("walk")
 
 func play(anim=default_animation):

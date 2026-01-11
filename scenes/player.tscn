@@ -552,6 +552,9 @@ _data = {
 radius = 2.5
 
 [node name="Player" type="CharacterBody3D"]
+wall_min_slide_angle = 0.7853982
+floor_max_angle = 1.3089969
+floor_snap_length = 0.15
 script = ExtResource("1_g2els")
 
 [node name="UI" type="CanvasLayer" parent="."]
@@ -1010,6 +1013,9 @@ libraries = {
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4273224, -0.12588853)
+
+[node name="AudioListener3D" type="AudioListener3D" parent="Camera3D"]
+current = true
 
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.605067, 0)

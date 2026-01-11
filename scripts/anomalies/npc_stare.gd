@@ -1,4 +1,4 @@
-extends AnomalyEvent
+class_name NPCStare extends AnomalyEvent
 
 func perform():
 	var npcs := world.get_tree().get_nodes_in_group("npc")
