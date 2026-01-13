@@ -72,13 +72,11 @@ func start_random():
 		print("none!")
 	
 	
-func load_anomalies(path="res://scripts/anomalies"):
-	
-	for file in DirAccess.get_files_at(path):
-		if file.ends_with(".gd"):
-			var script = load(path + "/" + file)
-			if script != null:
-				var res = Resource.new()
-				res.set_script(script)
-				anomalies.append(res)
+func load_anomalies(_path="res://scripts/anomalies"):
+	var scripts = [preload("uid://b37lea53v6f2"), preload("uid://bkws1fb08b5ad"), preload("uid://bocfefga86apk"), preload("uid://bot45uo3j0bji"), preload("uid://cwla8dwnq3qd4"), preload("uid://dubejy5e1yw27"), preload("uid://d1xp7col22co2"), preload("uid://8v1lylimtsv2"), preload("uid://c8tmkgpxoengl"), preload("uid://covminjftru1u")]
+	for script in scripts:
+		if script != null:
+			var res = Resource.new()
+			res.set_script(script)
+			anomalies.append(res)
 	print("Loaded ", anomalies.size(), " anomalies!")
