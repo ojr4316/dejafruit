@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c4ib25w5bpeyx" path="res://scenes/prefabs/SI/Env/Wall/Door/Largel/01.tscn" id="4_w57m6"]
 [ext_resource type="PackedScene" uid="uid://2y0y3hlxn3ie" path="res://scenes/prefabs/SI/Env/Wall/Window/01.tscn" id="5_drbwl"]
 [ext_resource type="PackedScene" uid="uid://brp3nvk7ycntv" path="res://scenes/prefabs/SI/Prop/ShoppingTrolley/01.tscn" id="6_hwv8p"]
-[ext_resource type="PackedScene" path="res://scenes/dynamic/auto_door.tscn" id="7_yjeik"]
+[ext_resource type="PackedScene" uid="uid://cul0ey4odfq6g" path="res://scenes/dynamic/auto_door.tscn" id="7_yjeik"]
 [ext_resource type="PackedScene" uid="uid://b2xwpyalw0xn1" path="res://scenes/prefabs/ceiling_light.tscn" id="8_nlnob"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjeik"]
@@ -365,19 +365,19 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -17.5, 0, -8.821318)
 
 [node name="AutoDoor2" parent="." instance=ExtResource("7_yjeik")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.051767, 0, -7.5)
 
 [node name="AutoDoor3" parent="." instance=ExtResource("7_yjeik")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.060709, 0, -7.5)
 
 [node name="AutoDoor4" parent="." instance=ExtResource("7_yjeik")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.950376, 0, -7.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.936025, 0, -7.5)
 
 [node name="EndAnomalyDoor" parent="." instance=ExtResource("7_yjeik")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 27.5, 0, -11.228678)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 27.5, 0, -11.288994)
 
 [node name="StartAnomalyDoor" parent="." instance=ExtResource("7_yjeik")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17.5, 0, -11.270059)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17.5, 0, -11.264892)
 
 [node name="ceiling" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.297, -10.017622)

@@ -8,6 +8,8 @@ class_name AutoDoor extends Node3D
 
 var active_tween: Tween = null
 
+@export var use_duration := 1.8
+
 var both_x: Vector2:
 	get:
 		return Vector2(left_body.position.x, right_body.position.x)
@@ -26,12 +28,12 @@ func toggle(open: bool) -> void:
 	
 	if open:
 		slide_open.play()
-		active_tween.tween_property(left_body, "position:x", -1, 2)
-		active_tween.tween_property(right_body, "position:x", 2, 2)
+		active_tween.tween_property(left_body, "position:x", -1, use_duration)
+		active_tween.tween_property(right_body, "position:x", 2, use_duration)
 	else:
 		slide_closed.play()
-		active_tween.tween_property(left_body, "position:x", 0, 1.9).set_ease(Tween.EASE_IN)
-		active_tween.tween_property(right_body, "position:x", 1, 1.9).set_ease(Tween.EASE_IN)
+		active_tween.tween_property(left_body, "position:x", 0, use_duration-0.2).set_ease(Tween.EASE_IN)
+		active_tween.tween_property(right_body, "position:x", 1, use_duration-0.2).set_ease(Tween.EASE_IN)
 
 
 	

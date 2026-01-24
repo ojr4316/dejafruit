@@ -1,8 +1,8 @@
-[gd_scene load_steps=124 format=3 uid="uid://e0uqpedqtca3"]
+[gd_scene load_steps=125 format=3 uid="uid://e0uqpedqtca3"]
 
 [ext_resource type="Script" uid="uid://c2wpbpu3jimp4" path="res://scripts/world.gd" id="1_grmox"]
 [ext_resource type="PackedScene" uid="uid://dylehg03f13oi" path="res://scenes/prefabs/SI/Env/Floor/01.tscn" id="1_nnsk1"]
-[ext_resource type="PackedScene" uid="uid://batbokxh1u4kd" path="res://scenes/lights.tscn" id="1_ygn2i"]
+[ext_resource type="PackedScene" uid="uid://b2xwpyalw0xn1" path="res://scenes/prefabs/ceiling_light.tscn" id="2_tp6af"]
 [ext_resource type="PackedScene" uid="uid://cn2kq1xlh0ffe" path="res://scenes/prefabs/SI/Env/Wall/CornerBlock/large.tscn" id="3_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://4gbeelx65cyd" path="res://scenes/prefabs/SI/Env/Wall/Large/01.tscn" id="5_qfnet"]
 [ext_resource type="PackedScene" uid="uid://yyv6sqpt4xso" path="res://scenes/prefabs/SI/Env/Wall/Large/Window/05.tscn" id="6_4mrxx"]
@@ -118,6 +118,7 @@
 [ext_resource type="PackedScene" uid="uid://c6pkpmgnn1qo2" path="res://scenes/prefabs/SI/Prop/WallDeco/06.tscn" id="115_tp6af"]
 [ext_resource type="PackedScene" uid="uid://bxx7usjn4lo22" path="res://scenes/prefabs/SI/Prop/Mannequin/07.tscn" id="116_optxr"]
 [ext_resource type="PackedScene" uid="uid://cvxdh1kybol1q" path="res://scenes/prefabs/SI/Prop/Mannequin/01.tscn" id="117_nbuqd"]
+[ext_resource type="PackedScene" uid="uid://cp502l7a3jh4a" path="res://scenes/prefabs/GangWarfareCharacters/cook_female.tscn" id="119_tp6af"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ygn2i"]
 albedo_color = Color(0.13333334, 0.13333334, 0.13333334, 1)
@@ -137,7 +138,7 @@ point_count = 11
 [sub_resource type="Curve3D" id="Curve3D_c15v2"]
 closed = true
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.53280735, 0, 3.709897, 0, 0, 0, 0, 0, 0, 0.64816284, 0, 7.522153, 0, 0, 0, 0, 0, 0, -0.38777542, 0, 11.29297, 0, 0, 0, 0, 0, 0, 5.537796, 0, 11.562314, 0, 0, 0, 0, 0, 0, 9.640112, 0, 11.603751, 0, 0, 0, 0, 0, 0, 11.774147, 0, 9.842656, 0, 0, 0, 0, 0, 0, 10.19952, 0, 5.5538683, 0, 0, 0, 0, 0, 0, 10.01305, 0, 2.756833, 0, 0, 0, 0, 0, 0, 6.635891, 0, 0.8714242, 0, 0, 0, 0, 0, 0, 3.9424496, 0, 1.1822062, 0, 0, 0, 0, 0, 0, 4.3361063, 0, 6.1132755, 0, 0, 0, 0, 0, 0, 4.108199, 0, 10.029124, 0, 0, 0, 0, 0, 0, -0.2841816, 0, 7.0663395, 0, 0, 0, 0, 0, 0, 0.46169376, 0, 3.7720532, 0, 0, 0, 0, 0, 0, -1.0300579, 0, 0.7885494),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -0.53280735, 0, 3.709897, 0, 0, 0, 0, 0, 0, 0.64816284, 0, 7.522153, 0, 0, 0, 0, 0, 0, -0.38777542, 0, 11.29297, 0, 0, 0, 0, 0, 0, 5.537796, 0, 11.562314, 0, 0, 0, 0, 0, 0, 9.640112, 0, 11.603751, 0, 0, 0, 0, 0, 0, 12.27128, 0, 10.918894, 0, 0, 0, 0, 0, 0, 10.19952, 0, 5.5538683, 0, 0, 0, 0, 0, 0, 10.01305, 0, 2.756833, 0, 0, 0, 0, 0, 0, 6.635891, 0, -0.21986914, 0, 0, 0, 0, 0, 0, 3.9424496, 0, 1.1822062, 0, 0, 0, 0, 0, 0, 4.3361063, 0, 6.1132755, 0, 0, 0, 0, 0, 0, 4.108199, 0, 10.029124, 0, 0, 0, 0, 0, 0, -0.2841816, 0, 7.0663395, 0, 0, 0, 0, 0, 0, 0.46169376, 0, 3.7720532, 0, 0, 0, 0, 0, 0, -1.0300579, 0, 0.7885494),
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 16
@@ -149,8 +150,47 @@ size = Vector3(3, 2, 5)
 script = ExtResource("1_grmox")
 loop_tomato = NodePath("props/LoopTomato")
 
-[node name="lights" parent="." groups=["world"] instance=ExtResource("1_ygn2i")]
+[node name="lights" type="Node3D" parent="." groups=["world"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="CeilingLight2" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17, 4.9, 0.5)
+
+[node name="CeilingLight3" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -10, 4.9, 0.5)
+
+[node name="CeilingLight7" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17, 4.9, 10.5)
+
+[node name="CeilingLight8" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -7, 4.9, 10.5)
+
+[node name="CeilingLight9" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.80093, 4.9, 10.5)
+
+[node name="CeilingLight10" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.1622245, 4.9, 10.5)
+
+[node name="CeilingLight17" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.8321264, 4.9, 2.145278)
+
+[node name="CeilingLight11" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.2226505, 4.9, 10.5)
+
+[node name="CeilingLight12" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.268343, 4.9, 10.5)
+
+[node name="CeilingLight16" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 9.268343, 4.9, -2)
+
+[node name="CeilingLight13" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13.061637, 4.9, 10.5)
+
+[node name="CeilingLight14" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.061638, 4.9, 10.5)
+
+[node name="CeilingLight15" parent="lights" groups=["light"] instance=ExtResource("2_tp6af")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.061638, 4.9, 3.5)
 
 [node name="floors" type="Node3D" parent="."]
 
@@ -917,7 +957,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 10, 
 [node name="SI_Prop_CheckoutCounter_03" parent="props" instance=ExtResource("8_4mrxx")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 13, 0, -3)
 
-[node name="SI_Prop_ATM_01" parent="props" instance=ExtResource("9_w7kh3")]
+[node name="SI_Prop_ATM_01" parent="props" groups=["atm"] instance=ExtResource("9_w7kh3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0.36066973)
 
 [node name="SI_Prop_Basket_Stack_02" parent="props" instance=ExtResource("10_e3hyu")]
@@ -1353,7 +1393,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7498826, 0, -2.1790357)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2501173, 0, -2.1790357)
 
 [node name="AutoDoor" parent="." instance=ExtResource("38_ggc52")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.931582, 0, -5)
 
 [node name="npc_paths" type="Node3D" parent="."]
 
@@ -1427,6 +1467,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2406471, 2.1513534, 0.03894
 
 [node name="cook" parent="." groups=["faceless"] instance=ExtResource("79_l137e")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 9.522, 0, -3.209)
+look_at_player = true
 
 [node name="Cashier" parent="cook" instance=ExtResource("90_frq1x")]
 
@@ -1648,3 +1689,8 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17.
 
 [node name="SI_Prop_ConcreteBench_01" parent="." instance=ExtResource("101_7b7y8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.844107, 0, -3.4972937)
+
+[node name="cook_female" parent="." instance=ExtResource("119_tp6af")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 1.3669543, 0.012373733, -0.66706485)
+look_at_player = true
+walking = false

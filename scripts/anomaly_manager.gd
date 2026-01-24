@@ -71,9 +71,25 @@ func start_random():
 		anomaly_present = false
 		print("none!")
 	
-	
-func load_anomalies(_path="res://scripts/anomalies"):
-	var scripts = [preload("uid://b37lea53v6f2"), preload("uid://bkws1fb08b5ad"), preload("uid://bocfefga86apk"), preload("uid://bot45uo3j0bji"), preload("uid://cwla8dwnq3qd4"), preload("uid://dubejy5e1yw27"), preload("uid://d1xp7col22co2"), preload("uid://8v1lylimtsv2"), preload("uid://c8tmkgpxoengl"), preload("uid://covminjftru1u")]
+
+
+## Anomaly scripts
+const Atm = preload("uid://ndratg2ne42v")
+const Dead = preload("uid://b37lea53v6f2")
+const EmptyShelves = preload("uid://bkws1fb08b5ad")
+const Faceless = preload("uid://bocfefga86apk")
+const Flicker = preload("uid://bot45uo3j0bji")
+const FruitDup = preload("uid://cwla8dwnq3qd4")
+const FruitRotten = preload("uid://dubejy5e1yw27")
+const LightsOff = preload("uid://d1xp7col22co2")
+const NpcStare = preload("uid://8v1lylimtsv2")
+const PriceTag = preload("uid://c8tmkgpxoengl")
+const Scaled = preload("uid://covminjftru1u")
+
+func load_anomalies():
+	var scripts = [Atm, Dead, EmptyShelves, Faceless, Flicker, FruitDup, FruitRotten,
+	LightsOff, NpcStare, PriceTag, Scaled]
+	## Load AnomalyEvent extended scripts into usable AnomalyEvent Resources
 	for script in scripts:
 		if script != null:
 			var res = Resource.new()

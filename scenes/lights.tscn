@@ -4,9 +4,6 @@
 
 [node name="lights" type="Node3D"]
 
-[node name="CeilingLight" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.5, -1)
-
 [node name="CeilingLight2" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 4.5, -1)
 
@@ -21,45 +18,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 4.5, 9)
 
 [node name="CeilingLight6" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 4.5, 9)
-
-[node name="CeilingLight7" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, -1)
-
-[node name="CeilingLight8" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8675528, 4.5, -3.6143677)
-
-[node name="CeilingLight9" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, 4)
-
-[node name="CeilingLight10" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4.5, 4)
-
-[node name="CeilingLight11" parent="." groups=["flicker_light", "light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, 9)
-
-[node name="CeilingLight12" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4.5, 9)
-
-[node name="CeilingLight14" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.5, -1)
-
-[node name="CeilingLight15" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 4.5, 4)
-
-[node name="CeilingLight16" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.5, 4)
-
-[node name="CeilingLight17" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 4.5, 9)
-
-[node name="CeilingLight18" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.5, 9)
-
-[node name="CeilingLight13" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4.5, 14)
-
-[node name="CeilingLight19" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 4.5, 14)
-
-[node name="CeilingLight20" parent="." groups=["light"] instance=ExtResource("1_2m05r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4.5, 14)
