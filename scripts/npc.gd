@@ -14,7 +14,8 @@ class_name NPC extends CharacterBody3D
 @export var static_pathing: PathFollow3D
 @export var walk_speed := 1.5
 @export var run_speed := 3.2
-@export var walking := true
+
+var walking := false
 
 var dead := false
 
@@ -26,6 +27,7 @@ func _ready():
 	
 	if static_pathing != null:
 		play("walk")
+		walking = true
 
 func die():
 	play("death")
@@ -36,6 +38,7 @@ func revive():
 	dead = false
 
 func play(anim=default_animation):
+	ap.speed_scale = randf_range(0.7, 1.2) if anim == "talking" else 1.0
 	ap.play("NPC_animations/" + anim)
 	
 func _on_check_vision_timeout() -> void:

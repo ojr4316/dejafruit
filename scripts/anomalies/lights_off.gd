@@ -1,4 +1,4 @@
-class_name LightsOff extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
 	print("lightsss")

@@ -1,4 +1,4 @@
-class_name FruitDup extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
 	print("fruit dup")

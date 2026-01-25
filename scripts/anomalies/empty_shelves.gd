@@ -1,4 +1,4 @@
-class_name EmptyShelves extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
 	print("shelves")

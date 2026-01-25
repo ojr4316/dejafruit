@@ -1,6 +1,7 @@
-class_name ATMSpit extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
+	print("ATM SPIT")
 	var atm = world.get_tree().get_first_node_in_group("atm")
 	atm.start()
 		

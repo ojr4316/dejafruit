@@ -1,4 +1,4 @@
-class_name Flicker extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
 	var light := world.get_tree().get_first_node_in_group("flicker_light")

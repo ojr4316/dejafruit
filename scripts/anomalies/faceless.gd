@@ -1,4 +1,4 @@
-class_name FacelessCashier extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
 	print("faceless")

@@ -1,4 +1,4 @@
-class_name NPCDead extends AnomalyEvent
+extends AnomalyEvent
 
 func perform():
 	print("all dead")

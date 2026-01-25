@@ -1,7 +1,7 @@
 extends AnomalyEvent
 
 func perform():
-	print("START")
+	print("tags")
 	var price_tags := world.get_tree().get_nodes_in_group("price_tag")
 	for tag in price_tags:
 		tag.set_price(6.66)

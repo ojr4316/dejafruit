@@ -1,8 +1,6 @@
 # Global AnomalyManager
 extends Node
 
-const WIN = preload("uid://1oeiarh1e408")
-
 const ANOMALY_CHANCE = 0.6
 
 var anomalies: Array[AnomalyEvent]
@@ -41,7 +39,7 @@ func start_random():
 
 	# Check win
 	if progress > win_state:
-		get_tree().call_deferred("change_scene_to_packed", WIN)
+		world_ref.end()
 		return
 
 	# Reset world
@@ -85,6 +83,8 @@ const LightsOff = preload("uid://d1xp7col22co2")
 const NpcStare = preload("uid://8v1lylimtsv2")
 const PriceTag = preload("uid://c8tmkgpxoengl")
 const Scaled = preload("uid://covminjftru1u")
+const MissingObjects = preload("uid://woy5usaw7buh")
+const MissingPeople = preload("uid://bnybga53n4cfe")
 
 func load_anomalies():
 	var scripts = [Atm, Dead, EmptyShelves, Faceless, Flicker, FruitDup, FruitRotten,
