@@ -206,6 +206,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 0)
 destroy_end_door = true
 
 [node name="store" type="Node3D" parent="."]
+visible = false
 
 [node name="lights" type="Node3D" parent="store" groups=["world"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
@@ -1779,7 +1780,6 @@ default_animation = "talking"
 
 [node name="parking_lot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0)
-visible = false
 
 [node name="store_front" type="MeshInstance3D" parent="parking_lot"]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -28.5, 6.0846376, -7.36471)

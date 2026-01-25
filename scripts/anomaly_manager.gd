@@ -88,7 +88,7 @@ const MissingPeople = preload("uid://bnybga53n4cfe")
 
 func load_anomalies():
 	var scripts = [Atm, Dead, EmptyShelves, Faceless, Flicker, FruitDup, FruitRotten,
-	LightsOff, NpcStare, PriceTag, Scaled]
+	LightsOff, NpcStare, PriceTag, Scaled, MissingObjects, MissingPeople]
 	## Load AnomalyEvent extended scripts into usable AnomalyEvent Resources
 	for script in scripts:
 		if script != null:
